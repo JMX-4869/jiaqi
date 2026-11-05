@@ -1,0 +1,3014 @@
+{
+ "fetchedAt": "2026-11-05T22:29:21+08:00",
+ "dataUpdatedAt": "2026-11-05T23:30:00+08:00",
+ "sources": [
+  {
+   "url": "https://jw.beijing.gov.cn/xxgk/2024zcwj/2024qtwj/202604/t20260417_4588623.html",
+   "title": "北京市教育委员会关于印发2026—2027学年度各级各类学校校历的通知",
+   "ok": true,
+   "status": 200,
+   "failedReason": "",
+   "candidates": [
+    {
+     "date": "2026-09-01",
+     "raw": "2026年9月1日",
+     "ctx": "年度北京市各级各类学校校历印发给你们，请结合本地区、本学校实际情况执行。   一、普通中小学、中等职业学校   义务教育阶段第一学期：   2026年9月1日（星期二）开学;   2027年1月17日（星期日）结束本学期工作，共19周零6天;   2027年1月18日（星期一）至2月21日（星期日",
+     "kind": null,
+     "role": "end"
+    },
+    {
+     "date": "2027-01-17",
+     "raw": "2027年1月17日",
+     "ctx": "结合本地区、本学校实际情况执行。   一、普通中小学、中等职业学校   义务教育阶段第一学期：   2026年9月1日（星期二）开学;   2027年1月17日（星期日）结束本学期工作，共19周零6天;   2027年1月18日（星期一）至2月21日（星期日）放寒假，共5周。   非义务教育阶段第一",
+     "kind": "winter",
+     "role": "start"
+    },
+    {
+     "date": "2027-01-18",
+     "raw": "2027年1月18日",
+     "ctx": "  义务教育阶段第一学期：   2026年9月1日（星期二）开学;   2027年1月17日（星期日）结束本学期工作，共19周零6天;   2027年1月18日（星期一）至2月21日（星期日）放寒假，共5周。   非义务教育阶段第一学期：   2026年9月1日（星期二）开学;   2027年1月2",
+     "kind": "winter",
+     "role": "start"
+    }
+   ],
+   "items": [
+    {
+     "where": "北京市 北京市 primary",
+     "label": "寒假",
+     "start": "2027-01-18",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": true,
+     "endSeenAsEnd": false,
+     "endDerived": false
+    },
+    {
+     "where": "北京市 北京市 primary",
+     "label": "暑假",
+     "start": "2027-07-06",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": true,
+     "endSeenAsEnd": false,
+     "endDerived": false
+    },
+    {
+     "where": "北京市 北京市 junior",
+     "label": "寒假",
+     "start": "2027-01-18",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": true,
+     "endSeenAsEnd": false,
+     "endDerived": false
+    },
+    {
+     "where": "北京市 北京市 junior",
+     "label": "暑假",
+     "start": "2027-07-06",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": true,
+     "endSeenAsEnd": false,
+     "endDerived": false
+    },
+    {
+     "where": "北京市 北京市 senior",
+     "label": "寒假",
+     "start": "2027-01-25",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": true,
+     "endSeenAsEnd": false,
+     "endDerived": false
+    },
+    {
+     "where": "北京市 北京市 senior",
+     "label": "暑假",
+     "start": "2027-07-13",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": true,
+     "endSeenAsEnd": false,
+     "endDerived": false
+    }
+   ],
+   "chars": 1620
+  },
+  {
+   "url": "https://m.sohu.com/a/1097240142_100934",
+   "title": "放假通知！全国多地中小学2027寒假时间确定了！",
+   "ok": true,
+   "status": 200,
+   "failedReason": "",
+   "candidates": [
+    {
+     "date": "2026-11-05",
+     "raw": "2026年11月5日",
+     "ctx": "   放假通知！全国多地中小学2027寒假时间确定了！_高中_学期结束_义务教育   2026年11月5日 学习频道最新文章   学习频道最新文章  放假通知！全国多地中小学2027寒假时间确定了！ 校长传媒 2026-11-04 20:37  ",
+     "kind": "winter",
+     "role": "start"
+    },
+    {
+     "date": "2027-01-23",
+     "raw": "2027年1月23日",
+     "ctx": "段（小学、初中）   最早放寒、暑假：广州、深圳、佛山、河源、惠州、汕尾、 东莞 、中山、湛江、茂名、肇庆、清远、揭阳、云浮的小学和初中都是2027年1月23日放寒假、7月10日放暑假。   最晚放寒、暑假：珠海的小学和初中2027年1月25日放寒假、7月12日放暑假。   普通高中阶段   最早放",
+     "kind": "winter",
+     "role": "start"
+    },
+    {
+     "date": "2027-01-25",
+     "raw": "2027年1月25日",
+     "ctx": "中山、湛江、茂名、肇庆、清远、揭阳、云浮的小学和初中都是2027年1月23日放寒假、7月10日放暑假。   最晚放寒、暑假：珠海的小学和初中2027年1月25日放寒假、7月12日放暑假。   普通高中阶段   最早放寒、暑假：茂名2027年1月23日放寒假、7月10日放暑假（与小学、初中同时）。  ",
+     "kind": "winter",
+     "role": "start"
+    }
+   ],
+   "items": [
+    {
+     "where": "天津市 天津市 primary",
+     "label": "寒假",
+     "start": "2027-01-19",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": false
+    },
+    {
+     "where": "天津市 天津市 junior",
+     "label": "寒假",
+     "start": "2027-01-19",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": false
+    },
+    {
+     "where": "天津市 天津市 senior",
+     "label": "寒假",
+     "start": "2027-01-26",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": false
+    },
+    {
+     "where": "辽宁省 沈阳市 primary",
+     "label": "寒假",
+     "start": "2027-01-15",
+     "startSeen": true,
+     "startSeenAsStart": false,
+     "end": "",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": false
+    },
+    {
+     "where": "辽宁省 沈阳市 junior",
+     "label": "寒假",
+     "start": "2027-01-15",
+     "startSeen": true,
+     "startSeenAsStart": false,
+     "end": "",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": false
+    },
+    {
+     "where": "辽宁省 沈阳市 senior",
+     "label": "寒假",
+     "start": "2027-01-22",
+     "startSeen": true,
+     "startSeenAsStart": false,
+     "end": "",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": false
+    },
+    {
+     "where": "浙江省 杭州市 primary",
+     "label": "寒假",
+     "start": "2027-01-30",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": false
+    },
+    {
+     "where": "浙江省 杭州市 junior",
+     "label": "寒假",
+     "start": "2027-01-30",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": false
+    },
+    {
+     "where": "浙江省 杭州市 senior",
+     "label": "寒假",
+     "start": "2027-01-30",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": false
+    },
+    {
+     "where": "福建省 福州市 primary",
+     "label": "寒假",
+     "start": "2027-01-28",
+     "startSeen": true,
+     "startSeenAsStart": false,
+     "end": "",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": false
+    },
+    {
+     "where": "福建省 福州市 junior",
+     "label": "寒假",
+     "start": "2027-01-28",
+     "startSeen": true,
+     "startSeenAsStart": false,
+     "end": "",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": false
+    },
+    {
+     "where": "福建省 福州市 senior",
+     "label": "寒假",
+     "start": "2027-01-30",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": false
+    },
+    {
+     "where": "福建省 厦门市 primary",
+     "label": "寒假",
+     "start": "2027-01-28",
+     "startSeen": true,
+     "startSeenAsStart": false,
+     "end": "",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": false
+    },
+    {
+     "where": "福建省 厦门市 junior",
+     "label": "寒假",
+     "start": "2027-01-28",
+     "startSeen": true,
+     "startSeenAsStart": false,
+     "end": "",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": false
+    },
+    {
+     "where": "福建省 厦门市 senior",
+     "label": "寒假",
+     "start": "2027-01-30",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": false
+    },
+    {
+     "where": "江西省 全省 primary",
+     "label": "寒假",
+     "start": "2027-01-23",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": false
+    },
+    {
+     "where": "江西省 全省 junior",
+     "label": "寒假",
+     "start": "2027-01-23",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": false
+    },
+    {
+     "where": "江西省 全省 senior",
+     "label": "寒假",
+     "start": "2027-01-30",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": false
+    },
+    {
+     "where": "山东省 济南市 primary",
+     "label": "寒假",
+     "start": "2027-01-23",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": false
+    },
+    {
+     "where": "山东省 济南市 junior",
+     "label": "寒假",
+     "start": "2027-01-23",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": false
+    },
+    {
+     "where": "山东省 济南市 senior",
+     "label": "寒假",
+     "start": "2027-01-30",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": false
+    },
+    {
+     "where": "湖北省 武汉市 primary",
+     "label": "寒假",
+     "start": "2027-01-23",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": false
+    },
+    {
+     "where": "湖北省 武汉市 junior",
+     "label": "寒假",
+     "start": "2027-01-23",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": false
+    },
+    {
+     "where": "湖北省 武汉市 senior",
+     "label": "寒假",
+     "start": "2027-01-30",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": false
+    },
+    {
+     "where": "海南省 全省 primary",
+     "label": "寒假",
+     "start": "2027-01-16",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": false
+    },
+    {
+     "where": "海南省 全省 junior",
+     "label": "寒假",
+     "start": "2027-01-16",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": false
+    },
+    {
+     "where": "海南省 全省 senior",
+     "label": "寒假",
+     "start": "2027-01-23",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": false
+    },
+    {
+     "where": "陕西省 西安市 primary",
+     "label": "寒假",
+     "start": "2027-01-22",
+     "startSeen": true,
+     "startSeenAsStart": false,
+     "end": "",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": false
+    },
+    {
+     "where": "陕西省 西安市 junior",
+     "label": "寒假",
+     "start": "2027-01-22",
+     "startSeen": true,
+     "startSeenAsStart": false,
+     "end": "",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": false
+    },
+    {
+     "where": "陕西省 西安市 senior",
+     "label": "寒假",
+     "start": "2027-01-29",
+     "startSeen": true,
+     "startSeenAsStart": false,
+     "end": "",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": false
+    }
+   ],
+   "chars": 5183
+  },
+  {
+   "url": "https://www.shanghai.gov.cn/nw17239/20260901/336cfe2355aa4d6ca3315852100674bc.html",
+   "title": "上海市中小学2026学年校历（静安区转发解读）",
+   "ok": true,
+   "status": 200,
+   "failedReason": "",
+   "candidates": [
+    {
+     "date": "2026-09-01",
+     "raw": "2026年9月1日",
+     "ctx": "表看懂    根据上海市教委发布的《上海市中小学2026学年校历》：    第一学期    （2026年9月—2027年1月）    开学：2026年9月1日（星期二）    结束：2027年1月22日    学期长度：21周    寒假安排    开始：2027年1月23日    结束：2027",
+     "kind": "winter",
+     "role": "start"
+    },
+    {
+     "date": "2027-01-22",
+     "raw": "2027年1月22日",
+     "ctx": "中小学2026学年校历》：    第一学期    （2026年9月—2027年1月）    开学：2026年9月1日（星期二）    结束：2027年1月22日    学期长度：21周    寒假安排    开始：2027年1月23日    结束：2027年2月21日    特别提醒：2027年2月",
+     "kind": "winter",
+     "role": "start"
+    },
+    {
+     "date": "2027-01-23",
+     "raw": "2027年1月23日",
+     "ctx": "7年1月）    开学：2026年9月1日（星期二）    结束：2027年1月22日    学期长度：21周    寒假安排    开始：2027年1月23日    结束：2027年2月21日    特别提醒：2027年2月22日（正月十六）第二学期开学，元宵节后第二天就上课，请家长和孩子合理安排",
+     "kind": "winter",
+     "role": "start"
+    }
+   ],
+   "items": [
+    {
+     "where": "上海市 上海市 primary",
+     "label": "寒假",
+     "start": "2027-01-23",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": true,
+     "endSeenAsEnd": false,
+     "endDerived": false
+    },
+    {
+     "where": "上海市 上海市 primary",
+     "label": "暑假",
+     "start": "2027-07-01",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": true,
+     "endSeenAsEnd": false,
+     "endDerived": false
+    },
+    {
+     "where": "上海市 上海市 junior",
+     "label": "寒假",
+     "start": "2027-01-23",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": true,
+     "endSeenAsEnd": false,
+     "endDerived": false
+    },
+    {
+     "where": "上海市 上海市 junior",
+     "label": "暑假",
+     "start": "2027-07-01",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": true,
+     "endSeenAsEnd": false,
+     "endDerived": false
+    },
+    {
+     "where": "上海市 上海市 senior",
+     "label": "寒假",
+     "start": "2027-01-23",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": true,
+     "endSeenAsEnd": false,
+     "endDerived": false
+    },
+    {
+     "where": "上海市 上海市 senior",
+     "label": "暑假",
+     "start": "2027-07-01",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": true,
+     "endSeenAsEnd": false,
+     "endDerived": false
+    }
+   ],
+   "chars": 2116
+  },
+  {
+   "url": "https://news.qq.com/rain/a/20260823A085YC00",
+   "title": "江苏中小学开学时间确定（引江苏省教育厅通知及南京、苏州校历）",
+   "ok": true,
+   "status": 200,
+   "failedReason": "",
+   "candidates": [
+    {
+     "date": "2027-01-26",
+     "raw": "2027年1月26日",
+     "ctx": "周二）正式上课  （具体时间以各学校通知为准）  从南京和苏州公布的中小学及幼儿园秋季学期新校历看，9月开学后的新学期共有22周，学期预计于2027年1月26日结束，明年1月27日起放寒假。  江苏各高校开学时间   南京大学 、东南大学等部分高校  也公布了秋季学期校历  ↓↓↓  南京大学   ",
+     "kind": "winter",
+     "role": "start"
+    },
+    {
+     "date": "2026-09-06",
+     "raw": "2026年9月6日",
+     "ctx": "周六、周日）报到。  无锡学院   9月5日（周六）、9月6日（周日）报到注册，9月7日（周一）开始上课。  无锡职业技术大学   老生： 2026年9月6日报到和领教材，9月7日正式上课  新生： 2026年9月8日报到、9月24日领教材，9月28日正式上课。2026级新生军训安排在9月10日-",
+     "kind": null,
+     "role": "start"
+    },
+    {
+     "date": "2026-09-08",
+     "raw": "2026年9月8日",
+     "ctx": "日（周日）报到注册，9月7日（周一）开始上课。  无锡职业技术大学   老生： 2026年9月6日报到和领教材，9月7日正式上课  新生： 2026年9月8日报到、9月24日领教材，9月28日正式上课。2026级新生军训安排在9月10日-9月24日。  寒假时间：2027年1月20日一2027年2",
+     "kind": "winter",
+     "role": "start"
+    }
+   ],
+   "items": [
+    {
+     "where": "江苏省 南京市 primary",
+     "label": "寒假",
+     "start": "2027-01-27",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": "来源仅覆盖南京、苏州两市校历；结束日期按春季开学前一天推算"
+    },
+    {
+     "where": "江苏省 南京市 junior",
+     "label": "寒假",
+     "start": "2027-01-27",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": "来源仅覆盖南京、苏州两市校历；结束日期按春季开学前一天推算"
+    },
+    {
+     "where": "江苏省 南京市 senior",
+     "label": "寒假",
+     "start": "2027-01-27",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": "来源仅覆盖南京、苏州两市校历；结束日期按春季开学前一天推算"
+    },
+    {
+     "where": "江苏省 苏州市 primary",
+     "label": "寒假",
+     "start": "2027-01-27",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": "来源仅覆盖南京、苏州两市校历；结束日期按春季开学前一天推算"
+    },
+    {
+     "where": "江苏省 苏州市 junior",
+     "label": "寒假",
+     "start": "2027-01-27",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": "来源仅覆盖南京、苏州两市校历；结束日期按春季开学前一天推算"
+    },
+    {
+     "where": "江苏省 苏州市 senior",
+     "label": "寒假",
+     "start": "2027-01-27",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": "来源仅覆盖南京、苏州两市校历；结束日期按春季开学前一天推算"
+    }
+   ],
+   "chars": 1225
+  },
+  {
+   "url": "https://news.qq.com/rain/a/20261105A09E6C00",
+   "title": "芜湖市中小学寒假时间定了！（据芜湖市教育局教学周次表）",
+   "ok": true,
+   "status": 200,
+   "failedReason": "",
+   "candidates": [
+    {
+     "date": "2027-01-27",
+     "raw": "2027年1月27日",
+     "ctx": "？   芜湖市2027年中小学寒假时间正式确定。据芜湖市教育局发布的芜湖市中小学2026一2027学年教学周次表内容显示：  义务教育阶段：2027年1月27日(农历腊月廿，周三)正式放寒假。   2026一2027学年度第二学期于2027年2月20日一2月21日入学报到，2027年2月22日(农历",
+     "kind": "winter",
+     "role": "start"
+    },
+    {
+     "date": "2027-02-20",
+     "raw": "2027年2月20日",
+     "ctx": "027学年教学周次表内容显示：  义务教育阶段：2027年1月27日(农历腊月廿，周三)正式放寒假。   2026一2027学年度第二学期于2027年2月20日一2月21日入学报到，2027年2月22日(农历正月十七，周一)正式上课。  高中阶段：2027年1月30日(农历腊月廿三，周六)正式放寒假",
+     "kind": "winter",
+     "role": "start"
+    },
+    {
+     "date": "2027-02-22",
+     "raw": "2027年2月22日",
+     "ctx": "阶段：2027年1月27日(农历腊月廿，周三)正式放寒假。   2026一2027学年度第二学期于2027年2月20日一2月21日入学报到，2027年2月22日(农历正月十七，周一)正式上课。  高中阶段：2027年1月30日(农历腊月廿三，周六)正式放寒假。   2026一2027学年度第二学期于",
+     "kind": "winter",
+     "role": "start"
+    }
+   ],
+   "items": [
+    {
+     "where": "安徽省 芜湖市 primary",
+     "label": "寒假",
+     "start": "2027-01-27",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": false
+    },
+    {
+     "where": "安徽省 芜湖市 junior",
+     "label": "寒假",
+     "start": "2027-01-27",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": false
+    },
+    {
+     "where": "安徽省 芜湖市 senior",
+     "label": "寒假",
+     "start": "2027-01-30",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": false
+    }
+   ],
+   "chars": 409
+  },
+  {
+   "url": "https://www.sohu.com/a/1096671272_120653457",
+   "title": "2027中小学寒假时间出炉！多地寒假变长？",
+   "ok": true,
+   "status": 200,
+   "failedReason": "",
+   "candidates": [
+    {
+     "date": "2026-11-05",
+     "raw": "2026年11月5日",
+     "ctx": "假变长？_高中_学期结束_义务教育   新闻   体育   汽车   房产   旅游   教育   时尚   科技   财经   娱乐   2026年11月5日 学习频道最新文章   学习频道最新文章   2027中小学寒假时间出炉！多地寒假变长？  中考升学直通车   文章  总阅读  教育领域优",
+     "kind": "winter",
+     "role": "end"
+    },
+    {
+     "date": "2027-01-23",
+     "raw": "2027年1月23日",
+     "ctx": "段（小学、初中）   最早放寒、暑假：广州、深圳、佛山、河源、惠州、汕尾、 东莞 、中山、湛江、茂名、肇庆、清远、揭阳、云浮的小学和初中都是2027年1月23日放寒假、7月10日放暑假。   最晚放寒、暑假：珠海的小学和初中2027年1月25日放寒假、7月12日放暑假。   普通高中阶段   最早放",
+     "kind": "winter",
+     "role": "start"
+    },
+    {
+     "date": "2027-01-25",
+     "raw": "2027年1月25日",
+     "ctx": "中山、湛江、茂名、肇庆、清远、揭阳、云浮的小学和初中都是2027年1月23日放寒假、7月10日放暑假。   最晚放寒、暑假：珠海的小学和初中2027年1月25日放寒假、7月12日放暑假。   普通高中阶段   最早放寒、暑假：茂名2027年1月23日放寒假、7月10日放暑假（与小学、初中同时）。  ",
+     "kind": "winter",
+     "role": "start"
+    }
+   ],
+   "items": [
+    {
+     "where": "湖南省 长沙市 primary",
+     "label": "寒假",
+     "start": "2027-01-24",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": false
+    },
+    {
+     "where": "湖南省 长沙市 junior",
+     "label": "寒假",
+     "start": "2027-01-24",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": false
+    },
+    {
+     "where": "湖南省 长沙市 senior",
+     "label": "寒假",
+     "start": "2027-01-24",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": false
+    }
+   ],
+   "chars": 5360
+  },
+  {
+   "url": "https://m.sohu.com/a/1066151298_132336/",
+   "title": "广东中小学新学年开学、寒假、暑假时间定了（来源：广东教育传媒）",
+   "ok": true,
+   "status": 200,
+   "failedReason": "",
+   "candidates": [
+    {
+     "date": "2026-11-05",
+     "raw": "2026年11月5日",
+     "ctx": "   广东中小学新学年开学、寒假、暑假时间定了_学期_阶段_义务教育   2026年11月5日 学习频道最新文章   学习频道最新文章  广东中小学新学年开学、寒假、暑假时间定了 新快报 2026-08-22 11:39  互联网新闻",
+     "kind": "winter",
+     "role": "end"
+    },
+    {
+     "date": "2027-01-23",
+     "raw": "2027年1月23日",
+     "ctx": "育阶段（小学、初中）   最早放寒、暑假：广州、深圳、佛山、河源、惠州、汕尾、东莞、中山、湛江、茂名、肇庆、清远、揭阳、云浮的小学和初中都是2027年1月23日放寒假、7月10日放暑假。   最晚放寒、暑假：珠海的小学和初中2027年1月25日放寒假、7月12日放暑假。   普通高中阶段   最早放",
+     "kind": "winter",
+     "role": "start"
+    },
+    {
+     "date": "2027-01-25",
+     "raw": "2027年1月25日",
+     "ctx": "中山、湛江、茂名、肇庆、清远、揭阳、云浮的小学和初中都是2027年1月23日放寒假、7月10日放暑假。   最晚放寒、暑假：珠海的小学和初中2027年1月25日放寒假、7月12日放暑假。   普通高中阶段   最早放寒、暑假：茂名2027年1月23日放寒假、7月10日放暑假（与小学、初中同时）。  ",
+     "kind": "winter",
+     "role": "start"
+    }
+   ],
+   "items": [
+    {
+     "where": "广东省 广州市 primary",
+     "label": "寒假",
+     "start": "2027-01-23",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 广州市 primary",
+     "label": "暑假",
+     "start": "2027-07-10",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 广州市 junior",
+     "label": "寒假",
+     "start": "2027-01-23",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 广州市 junior",
+     "label": "暑假",
+     "start": "2027-07-10",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 广州市 senior",
+     "label": "寒假",
+     "start": "2027-01-30",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 广州市 senior",
+     "label": "暑假",
+     "start": "2027-07-17",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 深圳市 primary",
+     "label": "寒假",
+     "start": "2027-01-23",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 深圳市 primary",
+     "label": "暑假",
+     "start": "2027-07-10",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 深圳市 junior",
+     "label": "寒假",
+     "start": "2027-01-23",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 深圳市 junior",
+     "label": "暑假",
+     "start": "2027-07-10",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 深圳市 senior",
+     "label": "寒假",
+     "start": "2027-01-30",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 深圳市 senior",
+     "label": "暑假",
+     "start": "2027-07-17",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 珠海市 primary",
+     "label": "寒假",
+     "start": "2027-01-25",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 珠海市 primary",
+     "label": "暑假",
+     "start": "2027-07-12",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 珠海市 junior",
+     "label": "寒假",
+     "start": "2027-01-25",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 珠海市 junior",
+     "label": "暑假",
+     "start": "2027-07-12",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 珠海市 senior",
+     "label": "寒假",
+     "start": "2027-02-01",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 珠海市 senior",
+     "label": "暑假",
+     "start": "2027-07-19",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 汕头市 primary",
+     "label": "寒假",
+     "start": "2027-01-24",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 汕头市 primary",
+     "label": "暑假",
+     "start": "2027-07-11",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 汕头市 junior",
+     "label": "寒假",
+     "start": "2027-01-24",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 汕头市 junior",
+     "label": "暑假",
+     "start": "2027-07-11",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 汕头市 senior",
+     "label": "寒假",
+     "start": "2027-01-31",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 汕头市 senior",
+     "label": "暑假",
+     "start": "2027-07-18",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 佛山市 primary",
+     "label": "寒假",
+     "start": "2027-01-23",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 佛山市 primary",
+     "label": "暑假",
+     "start": "2027-07-10",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 佛山市 junior",
+     "label": "寒假",
+     "start": "2027-01-23",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 佛山市 junior",
+     "label": "暑假",
+     "start": "2027-07-10",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 佛山市 senior",
+     "label": "寒假",
+     "start": "2027-01-30",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 佛山市 senior",
+     "label": "暑假",
+     "start": "2027-07-17",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 韶关市 primary",
+     "label": "寒假",
+     "start": "2027-01-24",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 韶关市 primary",
+     "label": "暑假",
+     "start": "2027-07-11",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 韶关市 junior",
+     "label": "寒假",
+     "start": "2027-01-24",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 韶关市 junior",
+     "label": "暑假",
+     "start": "2027-07-11",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 韶关市 senior",
+     "label": "寒假",
+     "start": "2027-01-31",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 韶关市 senior",
+     "label": "暑假",
+     "start": "2027-07-18",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 河源市 primary",
+     "label": "寒假",
+     "start": "2027-01-23",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 河源市 primary",
+     "label": "暑假",
+     "start": "2027-07-10",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 河源市 junior",
+     "label": "寒假",
+     "start": "2027-01-23",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 河源市 junior",
+     "label": "暑假",
+     "start": "2027-07-10",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 河源市 senior",
+     "label": "寒假",
+     "start": "2027-01-30",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 河源市 senior",
+     "label": "暑假",
+     "start": "2027-07-17",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 梅州市 primary",
+     "label": "寒假",
+     "start": "2027-01-24",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 梅州市 primary",
+     "label": "暑假",
+     "start": "2027-07-11",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 梅州市 junior",
+     "label": "寒假",
+     "start": "2027-01-24",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 梅州市 junior",
+     "label": "暑假",
+     "start": "2027-07-11",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 梅州市 senior",
+     "label": "寒假",
+     "start": "2027-01-31",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 梅州市 senior",
+     "label": "暑假",
+     "start": "2027-07-18",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 惠州市 primary",
+     "label": "寒假",
+     "start": "2027-01-23",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 惠州市 primary",
+     "label": "暑假",
+     "start": "2027-07-10",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 惠州市 junior",
+     "label": "寒假",
+     "start": "2027-01-23",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 惠州市 junior",
+     "label": "暑假",
+     "start": "2027-07-10",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 惠州市 senior",
+     "label": "寒假",
+     "start": "2027-01-30",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 惠州市 senior",
+     "label": "暑假",
+     "start": "2027-07-17",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 汕尾市 primary",
+     "label": "寒假",
+     "start": "2027-01-23",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 汕尾市 primary",
+     "label": "暑假",
+     "start": "2027-07-10",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 汕尾市 junior",
+     "label": "寒假",
+     "start": "2027-01-23",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 汕尾市 junior",
+     "label": "暑假",
+     "start": "2027-07-10",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 汕尾市 senior",
+     "label": "寒假",
+     "start": "2027-01-30",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 汕尾市 senior",
+     "label": "暑假",
+     "start": "2027-07-17",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 东莞市 primary",
+     "label": "寒假",
+     "start": "2027-01-23",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 东莞市 primary",
+     "label": "暑假",
+     "start": "2027-07-10",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 东莞市 junior",
+     "label": "寒假",
+     "start": "2027-01-23",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 东莞市 junior",
+     "label": "暑假",
+     "start": "2027-07-10",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 东莞市 senior",
+     "label": "寒假",
+     "start": "2027-01-30",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 东莞市 senior",
+     "label": "暑假",
+     "start": "2027-07-17",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 中山市 primary",
+     "label": "寒假",
+     "start": "2027-01-23",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 中山市 primary",
+     "label": "暑假",
+     "start": "2027-07-10",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 中山市 junior",
+     "label": "寒假",
+     "start": "2027-01-23",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 中山市 junior",
+     "label": "暑假",
+     "start": "2027-07-10",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 中山市 senior",
+     "label": "寒假",
+     "start": "2027-01-30",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 中山市 senior",
+     "label": "暑假",
+     "start": "2027-07-17",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 江门市 primary",
+     "label": "寒假",
+     "start": "2027-01-24",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 江门市 primary",
+     "label": "暑假",
+     "start": "2027-07-11",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 江门市 junior",
+     "label": "寒假",
+     "start": "2027-01-24",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 江门市 junior",
+     "label": "暑假",
+     "start": "2027-07-11",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 江门市 senior",
+     "label": "寒假",
+     "start": "2027-01-31",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 江门市 senior",
+     "label": "暑假",
+     "start": "2027-07-18",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 阳江市 primary",
+     "label": "寒假",
+     "start": "2027-01-24",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 阳江市 primary",
+     "label": "暑假",
+     "start": "2027-07-11",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 阳江市 junior",
+     "label": "寒假",
+     "start": "2027-01-24",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 阳江市 junior",
+     "label": "暑假",
+     "start": "2027-07-11",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 阳江市 senior",
+     "label": "寒假",
+     "start": "2027-01-31",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 阳江市 senior",
+     "label": "暑假",
+     "start": "2027-07-18",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 湛江市 primary",
+     "label": "寒假",
+     "start": "2027-01-23",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 湛江市 primary",
+     "label": "暑假",
+     "start": "2027-07-10",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 湛江市 junior",
+     "label": "寒假",
+     "start": "2027-01-23",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 湛江市 junior",
+     "label": "暑假",
+     "start": "2027-07-10",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 湛江市 senior",
+     "label": "寒假",
+     "start": "2027-01-30",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 湛江市 senior",
+     "label": "暑假",
+     "start": "2027-07-16",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 茂名市 primary",
+     "label": "寒假",
+     "start": "2027-01-23",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 茂名市 primary",
+     "label": "暑假",
+     "start": "2027-07-10",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 茂名市 junior",
+     "label": "寒假",
+     "start": "2027-01-23",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 茂名市 junior",
+     "label": "暑假",
+     "start": "2027-07-10",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 茂名市 senior",
+     "label": "寒假",
+     "start": "2027-01-23",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 茂名市 senior",
+     "label": "暑假",
+     "start": "2027-07-10",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 肇庆市 primary",
+     "label": "寒假",
+     "start": "2027-01-23",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 肇庆市 primary",
+     "label": "暑假",
+     "start": "2027-07-10",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 肇庆市 junior",
+     "label": "寒假",
+     "start": "2027-01-23",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 肇庆市 junior",
+     "label": "暑假",
+     "start": "2027-07-10",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 肇庆市 senior",
+     "label": "寒假",
+     "start": "2027-01-30",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 肇庆市 senior",
+     "label": "暑假",
+     "start": "2027-07-17",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 清远市 primary",
+     "label": "寒假",
+     "start": "2027-01-23",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 清远市 primary",
+     "label": "暑假",
+     "start": "2027-07-10",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 清远市 junior",
+     "label": "寒假",
+     "start": "2027-01-23",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 清远市 junior",
+     "label": "暑假",
+     "start": "2027-07-10",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 清远市 senior",
+     "label": "寒假",
+     "start": "2027-01-30",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 清远市 senior",
+     "label": "暑假",
+     "start": "2027-07-17",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 潮州市 primary",
+     "label": "寒假",
+     "start": "2027-01-24",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 潮州市 primary",
+     "label": "暑假",
+     "start": "2027-07-11",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 潮州市 junior",
+     "label": "寒假",
+     "start": "2027-01-24",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 潮州市 junior",
+     "label": "暑假",
+     "start": "2027-07-11",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 潮州市 senior",
+     "label": "寒假",
+     "start": "2027-01-31",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 潮州市 senior",
+     "label": "暑假",
+     "start": "2027-07-18",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 揭阳市 primary",
+     "label": "寒假",
+     "start": "2027-01-23",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 揭阳市 primary",
+     "label": "暑假",
+     "start": "2027-07-10",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 揭阳市 junior",
+     "label": "寒假",
+     "start": "2027-01-23",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 揭阳市 junior",
+     "label": "暑假",
+     "start": "2027-07-10",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 揭阳市 senior",
+     "label": "寒假",
+     "start": "2027-01-30",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 揭阳市 senior",
+     "label": "暑假",
+     "start": "2027-07-17",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 云浮市 primary",
+     "label": "寒假",
+     "start": "2027-01-23",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 云浮市 primary",
+     "label": "暑假",
+     "start": "2027-07-10",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 云浮市 junior",
+     "label": "寒假",
+     "start": "2027-01-23",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 云浮市 junior",
+     "label": "暑假",
+     "start": "2027-07-10",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 云浮市 senior",
+     "label": "寒假",
+     "start": "2027-01-30",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "广东省 云浮市 senior",
+     "label": "暑假",
+     "start": "2027-07-17",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    }
+   ],
+   "chars": 4426
+  },
+  {
+   "url": "https://www.cq.gov.cn/ywdt/bmts/202610/t20261013_16225627.html",
+   "title": "重庆中小学寒假时间定了！",
+   "ok": true,
+   "status": 200,
+   "failedReason": "",
+   "candidates": [
+    {
+     "date": "2027-01-19",
+     "raw": "2027年1月19日",
+     "ctx": "庆中小学这学期寒假 什么时候开始呢？ 一起来看！   根据重庆市教育局发布的中小学校历，2026-2027学年，小学和初中最早开始放寒假，从2027年1月19日开始。  重庆中小学寒假安排   幼儿园   重庆幼儿园可参照小学安排放假，或根据实际情况自行确定放假时间，重庆市不统一。家长以家庭安排及老",
+     "kind": "winter",
+     "role": "start"
+    },
+    {
+     "date": "2027-02-22",
+     "raw": "2027年2月22日",
+     "ctx": "寒假，2月21日（周日，农历正月十六）结束寒假。  校历详情   寒假开始时间：2027年1月19日（周二，农历腊月十二）  春季学期开学：2027年2月22日（周一，农历正月十七）  暑假开始时间：2027年7月3日（周六）  初中   重庆初中从2027年1月19日（周二，农历腊月十二）开始放寒",
+     "kind": "winter",
+     "role": "start"
+    },
+    {
+     "date": "2027-07-03",
+     "raw": "2027年7月3日",
+     "ctx": "   寒假开始时间：2027年1月19日（周二，农历腊月十二）  春季学期开学：2027年2月22日（周一，农历正月十七）  暑假开始时间：2027年7月3日（周六）  初中   重庆初中从2027年1月19日（周二，农历腊月十二）开始放寒假，2月21日（周日，农历正月十六）结束寒假。  校历详情",
+     "kind": "winter",
+     "role": "start"
+    }
+   ],
+   "items": [
+    {
+     "where": "重庆市 重庆市 primary",
+     "label": "寒假",
+     "start": "2027-01-19",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": true,
+     "endSeenAsEnd": false,
+     "endDerived": false
+    },
+    {
+     "where": "重庆市 重庆市 primary",
+     "label": "暑假",
+     "start": "2027-07-03",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "重庆市 重庆市 junior",
+     "label": "寒假",
+     "start": "2027-01-19",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": true,
+     "endSeenAsEnd": false,
+     "endDerived": false
+    },
+    {
+     "where": "重庆市 重庆市 junior",
+     "label": "暑假",
+     "start": "2027-07-03",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    },
+    {
+     "where": "重庆市 重庆市 senior",
+     "label": "寒假",
+     "start": "2027-01-26",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": true,
+     "endSeenAsEnd": false,
+     "endDerived": false
+    },
+    {
+     "where": "重庆市 重庆市 senior",
+     "label": "暑假",
+     "start": "2027-07-03",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-08-31",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": true
+    }
+   ],
+   "chars": 3614
+  },
+  {
+   "url": "http://news.shaocn.com/guonei/2026/1019/113658.html",
+   "title": "四川各地中小学寒假放假时间（据各市州教育局官微）",
+   "ok": true,
+   "status": 200,
+   "failedReason": "",
+   "candidates": [
+    {
+     "date": "2027-01-22",
+     "raw": "2027年1月22日",
+     "ctx": "好久放寒假？  (资料图片)  根据各市州官方发布的信息，小编整理了今年四川各地中小学寒假安排。  来一起看看吧！  一、成都市  幼儿园：2027年1月22日结束，1月23日起放寒假。  义务教育学校：期末考试在2027年1月18日—22日期间安排，1月22日（星期五）结束，1月23日起放寒假，实",
+     "kind": "winter",
+     "role": "start"
+    },
+    {
+     "date": "2027-01-18",
+     "raw": "2027年1月18日",
+     "ctx": "川各地中小学寒假安排。  来一起看看吧！  一、成都市  幼儿园：2027年1月22日结束，1月23日起放寒假。  义务教育学校：期末考试在2027年1月18日—22日期间安排，1月22日（星期五）结束，1月23日起放寒假，实际教育教学20周（不含国家法定节假日）。  高中阶段学校：期末考试在202",
+     "kind": "winter",
+     "role": "start"
+    },
+    {
+     "date": "2027-01-15",
+     "raw": "2027年1月15日",
+     "ctx": "—22日期间安排，1月22日（星期五）结束，1月23日起放寒假，实际教育教学20周（不含国家法定节假日）。  二、自贡市  小学（幼儿园）：2027年1月15日结束，1月16日开始放寒假，共计二十周（含复习考试和学校机动时间）。  中学：2027年1月22日结束，1月23日开始放寒假，共计二十一周（",
+     "kind": "winter",
+     "role": "start"
+    }
+   ],
+   "items": [
+    {
+     "where": "四川省 成都市 primary",
+     "label": "寒假",
+     "start": "2027-01-23",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": "幼儿园 1/23 起"
+    },
+    {
+     "where": "四川省 成都市 junior",
+     "label": "寒假",
+     "start": "2027-01-23",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": "幼儿园 1/23 起"
+    },
+    {
+     "where": "四川省 成都市 senior",
+     "label": "寒假",
+     "start": "2027-01-23",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": "幼儿园 1/23 起"
+    },
+    {
+     "where": "四川省 自贡市 primary",
+     "label": "寒假",
+     "start": "2027-01-16",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": "小学/幼儿园 1/16，中学 1/23"
+    },
+    {
+     "where": "四川省 自贡市 junior",
+     "label": "寒假",
+     "start": "2027-01-16",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": "小学/幼儿园 1/16，中学 1/23"
+    },
+    {
+     "where": "四川省 自贡市 senior",
+     "label": "寒假",
+     "start": "2027-01-23",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": "小学/幼儿园 1/16，中学 1/23"
+    },
+    {
+     "where": "四川省 攀枝花市 primary",
+     "label": "寒假",
+     "start": "2027-01-23",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": "全县中小学统一"
+    },
+    {
+     "where": "四川省 攀枝花市 junior",
+     "label": "寒假",
+     "start": "2027-01-23",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": "全县中小学统一"
+    },
+    {
+     "where": "四川省 攀枝花市 senior",
+     "label": "寒假",
+     "start": "2027-01-23",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": "全县中小学统一"
+    },
+    {
+     "where": "四川省 泸州市 primary",
+     "label": "寒假",
+     "start": "2027-01-26",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": "全市中小学统一"
+    },
+    {
+     "where": "四川省 泸州市 junior",
+     "label": "寒假",
+     "start": "2027-01-26",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": "全市中小学统一"
+    },
+    {
+     "where": "四川省 泸州市 senior",
+     "label": "寒假",
+     "start": "2027-01-26",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": "全市中小学统一"
+    },
+    {
+     "where": "四川省 乐山市 primary",
+     "label": "寒假",
+     "start": "2027-01-23",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": "幼儿园参照义务教育"
+    },
+    {
+     "where": "四川省 乐山市 junior",
+     "label": "寒假",
+     "start": "2027-01-23",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": "幼儿园参照义务教育"
+    },
+    {
+     "where": "四川省 乐山市 senior",
+     "label": "寒假",
+     "start": "2027-01-30",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": "幼儿园参照义务教育"
+    },
+    {
+     "where": "四川省 南充市 primary",
+     "label": "寒假",
+     "start": "2027-01-23",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": "幼儿园参照义务教育"
+    },
+    {
+     "where": "四川省 南充市 junior",
+     "label": "寒假",
+     "start": "2027-01-23",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": "幼儿园参照义务教育"
+    },
+    {
+     "where": "四川省 南充市 senior",
+     "label": "寒假",
+     "start": "2027-01-23",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": "幼儿园参照义务教育"
+    },
+    {
+     "where": "四川省 德阳市 primary",
+     "label": "寒假",
+     "start": "2027-01-23",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": "幼儿园参照义务教育"
+    },
+    {
+     "where": "四川省 德阳市 junior",
+     "label": "寒假",
+     "start": "2027-01-23",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": "幼儿园参照义务教育"
+    },
+    {
+     "where": "四川省 德阳市 senior",
+     "label": "寒假",
+     "start": "2027-01-23",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": "幼儿园参照义务教育"
+    },
+    {
+     "where": "四川省 内江市 primary",
+     "label": "寒假",
+     "start": "2027-01-23",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": "结束日期按春季开学前一天推算"
+    },
+    {
+     "where": "四川省 内江市 junior",
+     "label": "寒假",
+     "start": "2027-01-23",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": "结束日期按春季开学前一天推算"
+    },
+    {
+     "where": "四川省 内江市 senior",
+     "label": "寒假",
+     "start": "2027-01-23",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": "结束日期按春季开学前一天推算"
+    },
+    {
+     "where": "四川省 眉山市 primary",
+     "label": "寒假",
+     "start": "2027-01-23",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": "结束日期按春季开学前一天推算"
+    },
+    {
+     "where": "四川省 眉山市 junior",
+     "label": "寒假",
+     "start": "2027-01-23",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": "结束日期按春季开学前一天推算"
+    },
+    {
+     "where": "四川省 眉山市 senior",
+     "label": "寒假",
+     "start": "2027-01-23",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": "结束日期按春季开学前一天推算"
+    },
+    {
+     "where": "四川省 广安市 primary",
+     "label": "寒假",
+     "start": "2027-01-23",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": "结束日期按春季开学前一天推算"
+    },
+    {
+     "where": "四川省 广安市 junior",
+     "label": "寒假",
+     "start": "2027-01-23",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": "结束日期按春季开学前一天推算"
+    },
+    {
+     "where": "四川省 广安市 senior",
+     "label": "寒假",
+     "start": "2027-01-23",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": "结束日期按春季开学前一天推算"
+    },
+    {
+     "where": "四川省 雅安市 primary",
+     "label": "寒假",
+     "start": "2027-01-23",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": "结束日期按春季开学前一天推算"
+    },
+    {
+     "where": "四川省 雅安市 junior",
+     "label": "寒假",
+     "start": "2027-01-23",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": "结束日期按春季开学前一天推算"
+    },
+    {
+     "where": "四川省 雅安市 senior",
+     "label": "寒假",
+     "start": "2027-01-23",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": "结束日期按春季开学前一天推算"
+    },
+    {
+     "where": "四川省 凉山州 primary",
+     "label": "寒假",
+     "start": "2027-01-25",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": "义务教育与高中同日"
+    },
+    {
+     "where": "四川省 凉山州 junior",
+     "label": "寒假",
+     "start": "2027-01-25",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": "义务教育与高中同日"
+    },
+    {
+     "where": "四川省 凉山州 senior",
+     "label": "寒假",
+     "start": "2027-01-25",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-21",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": "义务教育与高中同日"
+    }
+   ],
+   "chars": 14418
+  },
+  {
+   "url": "https://www.gov.cn/zhengce/content/202611/content_7085101.htm",
+   "title": "国务院办公厅关于2027年部分节假日安排的通知",
+   "ok": true,
+   "status": 200,
+   "failedReason": "",
+   "candidates": [
+    {
+     "date": "2026-11-05",
+     "raw": "2026年11月05日",
+     "ctx": "引 号：   000014349/2026-00079  主题分类：   综合政务\\其他  发文机关：   国务院办公厅  成文日期：   2026年11月05日  标 题：   国务院办公厅关于2027年部分节假日安排的通知  发文字号：   国办发明电〔2026〕10号  发布日期：   2026",
+     "kind": null,
+     "role": "other"
+    },
+    {
+     "date": "2027-11-05",
+     "raw": "11月05日",
+     "ctx": "  000014349/2026-00079  主题分类：   综合政务\\其他  发文机关：   国务院办公厅  成文日期：   2026年11月05日  标 题：   国务院办公厅关于2027年部分节假日安排的通知  发文字号：   国办发明电〔2026〕10号  发布日期：   2026",
+     "kind": null,
+     "role": "other"
+    },
+    {
+     "date": "2027-01-01",
+     "raw": "1月1日",
+     "ctx": "直属机构：  经国务院批准，现将2027年元旦、春节、清明节、劳动节、端午节、中秋节和国庆节放假调休日期的具体安排通知如下。  一、元旦： 1月1日（周五）至3日（周日）放假，共3天。  二、春节： 2月5日（农历除夕、周五）至13日（农历正月初八、周六）放假调休，共9天。1月31日（周",
+     "kind": "newyear",
+     "role": "start"
+    }
+   ],
+   "items": [
+    {
+     "where": "全国",
+     "label": "元旦",
+     "start": "2027-01-01",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-01-03",
+     "endSeen": false,
+     "endSeenAsEnd": false,
+     "endDerived": false
+    },
+    {
+     "where": "全国",
+     "label": "春节",
+     "start": "2027-02-05",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-13",
+     "endSeen": false,
+     "endSeenAsEnd": false,
+     "endDerived": false
+    },
+    {
+     "where": "全国",
+     "label": "清明节",
+     "start": "2027-04-03",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-04-05",
+     "endSeen": false,
+     "endSeenAsEnd": false,
+     "endDerived": false
+    },
+    {
+     "where": "全国",
+     "label": "劳动节",
+     "start": "2027-05-01",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-05-05",
+     "endSeen": false,
+     "endSeenAsEnd": false,
+     "endDerived": false
+    },
+    {
+     "where": "全国",
+     "label": "端午节",
+     "start": "2027-06-09",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-06-09",
+     "endSeen": true,
+     "endSeenAsEnd": false,
+     "endDerived": false
+    },
+    {
+     "where": "全国",
+     "label": "中秋节",
+     "start": "2027-09-15",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-09-15",
+     "endSeen": true,
+     "endSeenAsEnd": false,
+     "endDerived": false
+    },
+    {
+     "where": "全国",
+     "label": "国庆节",
+     "start": "2027-10-01",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-10-07",
+     "endSeen": false,
+     "endSeenAsEnd": false,
+     "endDerived": false
+    }
+   ],
+   "chars": 1734
+  },
+  {
+   "url": "https://finance.sina.com.cn/wm/2026-10-18/doc-inivrkxt6635956.shtml",
+   "title": "兰州多所高校的寒假时间（整理自各高校校历）",
+   "ok": true,
+   "status": 200,
+   "failedReason": "",
+   "candidates": [
+    {
+     "date": "2026-10-18",
+     "raw": "2026年10月18日",
+     "ctx": " 自媒体热点 >   正文   行情   股吧   新闻   外汇   新三板   兰州多所高校的寒假时间→  兰州多所高校的寒假时间→  2026年10月18日 11:40   兰州发布   新浪财经APP   缩小字体   放大字体   收藏   微博   分享   MD   微信   腾讯QQ ",
+     "kind": "winter",
+     "role": "other"
+    },
+    {
+     "date": "2026-08-27",
+     "raw": "2026年8月27日",
+     "ctx": "以下整理自各高校校历   具体以学校通知为准   兰州大学2026—2027寒假时间  ✅ 2026—2027学年第一学期在校学生注册时间为2026年8月27日至8月28日 ，8月31日(第1周星期一)在校生开始上课， 2027年1月17日(第20周星期日)结束 。其中，课程安排共18周，期末考试2",
+     "kind": "winter",
+     "role": "start"
+    },
+    {
+     "date": "2027-01-17",
+     "raw": "2027年1月17日",
+     "ctx": "时间  ✅ 2026—2027学年第一学期在校学生注册时间为2026年8月27日至8月28日 ，8月31日(第1周星期一)在校生开始上课， 2027年1月17日(第20周星期日)结束 。其中，课程安排共18周，期末考试2周。   ✅ 2026—2027学年第二学期在校学生 注册时间为2027年2月1",
+     "kind": null,
+     "role": "start"
+    }
+   ],
+   "items": [
+    {
+     "where": "兰州大学",
+     "label": "寒假",
+     "start": "2027-01-18",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-17",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": "1/17 结束学期，2/18-19 注册，2/22 上课"
+    },
+    {
+     "where": "西北师范大学",
+     "label": "寒假",
+     "start": "2027-01-16",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-26",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": "2/27-28 注册，3/1 上课"
+    },
+    {
+     "where": "兰州理工大学",
+     "label": "寒假",
+     "start": "2027-01-18",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-26",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": "1/18 起放寒假"
+    },
+    {
+     "where": "兰州交通大学",
+     "label": "寒假",
+     "start": "2027-01-18",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-28",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": "校历明确 1/18—2/28 放寒假 6 周"
+    },
+    {
+     "where": "甘肃政法大学",
+     "label": "寒假",
+     "start": "2027-01-16",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-26",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": "校历明确 1/16—2/26，共 6 周"
+    },
+    {
+     "where": "兰州文理学院",
+     "label": "寒假",
+     "start": "2027-01-18",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-26",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": "2/27-28 注册"
+    },
+    {
+     "where": "兰州工业学院",
+     "label": "寒假",
+     "start": "2027-01-11",
+     "startSeen": true,
+     "startSeenAsStart": true,
+     "end": "2027-02-26",
+     "endSeen": null,
+     "endSeenAsEnd": null,
+     "endDerived": "1/11 起放寒假"
+    }
+   ],
+   "chars": 4255
+  }
+ ],
+ "summary": {
+  "sources": 11,
+  "ok": 11,
+  "failed": 0,
+  "items": 236,
+  "startMissing": 0,
+  "endMissing": 5
+ },
+ "diff": [
+  {
+   "where": "全国",
+   "label": "元旦",
+   "start": "2027-01-01",
+   "startSeen": true,
+   "startSeenAsStart": true,
+   "end": "2027-01-03",
+   "endSeen": false,
+   "endSeenAsEnd": false,
+   "endDerived": false,
+   "url": "https://www.gov.cn/zhengce/content/202611/content_7085101.htm",
+   "type": "end_missing"
+  },
+  {
+   "where": "全国",
+   "label": "春节",
+   "start": "2027-02-05",
+   "startSeen": true,
+   "startSeenAsStart": true,
+   "end": "2027-02-13",
+   "endSeen": false,
+   "endSeenAsEnd": false,
+   "endDerived": false,
+   "url": "https://www.gov.cn/zhengce/content/202611/content_7085101.htm",
+   "type": "end_missing"
+  },
+  {
+   "where": "全国",
+   "label": "清明节",
+   "start": "2027-04-03",
+   "startSeen": true,
+   "startSeenAsStart": true,
+   "end": "2027-04-05",
+   "endSeen": false,
+   "endSeenAsEnd": false,
+   "endDerived": false,
+   "url": "https://www.gov.cn/zhengce/content/202611/content_7085101.htm",
+   "type": "end_missing"
+  }
+ ]
+}

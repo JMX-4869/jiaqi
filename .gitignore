@@ -1,0 +1,24 @@
+# 构建产物
+desktop/build/
+app/build/
+app/assets/holidays.json.bak
+build/
+
+# 另一个数据仓库（单独推的）
+.data-repo/
+
+# 调试输出
+ui*.xml
+fullscreen.png
+tray.png
+*.log
+
+# 系统垃圾
+Thumbs.db
+.DS_Store
+desktop/rings/
+
+# 本地配置
+theme.json
+sources.json
+plans.json

@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>假期表</title>
+<style>
+  :root{
+    --bg:#0E1116; --card:#161B22; --card2:#1B222B; --line:#232B36;
+    --text:#E6EDF3; --sub:#8B949E; --accent:#4CC2FF; --warn:#FFB347;
+  }
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  html,body{margin:0;height:100%;background:#000}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+    color:var(--text); display:flex; justify-content:center;
+  }
+  #phone{
+    width:100%; max-width:430px; height:100dvh; background:var(--bg);
+    display:flex; flex-direction:column; position:relative; overflow:hidden;
+  }
+  header{padding:22px 18px 8px; flex:none}
+  header h1{margin:0; font-size:26px; font-weight:700; letter-spacing:.5px}
+  header .sub{margin-top:5px; font-size:12px; color:var(--sub)}
+  main{flex:1; overflow-y:auto; padding:4px 14px 96px; -webkit-overflow-scrolling:touch}
+  main::-webkit-scrollbar{display:none}
+
+  .card{
+    background:var(--card); border-radius:14px; padding:14px 16px;
+    margin-bottom:10px; cursor:pointer; transition:background .12s;
+  }
+  .card:active{background:#1A232D}
+  .card.plain{cursor:default}
+  .card.plain:active{background:var(--card)}
+
+  .row{display:flex; align-items:center; gap:10px}
+  .col{display:flex; flex-direction:column; min-width:0}
+  .grow{flex:1}
+
+  .name{font-size:16px; font-weight:700}
+  .meta{font-size:12px; color:var(--sub); margin-top:5px; line-height:1.5}
+  .tiny{font-size:11px; color:var(--sub); line-height:1.6}
+
+  .count{display:flex; flex-direction:column; align-items:center; justify-content:center; padding-left:10px}
+  .count b{font-size:30px; color:var(--accent); font-weight:700; line-height:1}
+  .count span{font-size:11px; color:var(--sub); margin-top:3px}
+
+  .arrow{font-size:22px; color:var(--sub); padding-left:6px}
+
+  .tag{display:inline-block; font-size:10px; padding:2px 7px; border-radius:20px; margin-left:6px}
+  .tag.official{background:#12301F; color:#6FD68B}
+  .tag.media{background:#12242F; color:#5FB6D9}
+  .tag.aggregate{background:#2C2413; color:var(--warn)}
+
+  .plus{
+    width:34px;height:34px;border-radius:50%;background:var(--card2);
+    display:flex;align-items:center;justify-content:center;
+    font-size:20px;color:var(--accent);flex:none;
+  }
+  .plus.on{font-size:11px;color:var(--sub)}
+
+  nav{
+    position:absolute;left:0;right:0;bottom:0;height:66px;display:flex;
+    background:rgba(17,22,29,.96); backdrop-filter:blur(12px);
+    border-top:1px solid rgba(255,255,255,.04);
+  }
+  nav button{
+    flex:1;background:none;border:0;color:var(--sub);font-size:13px;
+    font-weight:700;cursor:pointer;font-family:inherit;
+  }
+  nav button.on{color:var(--accent)}
+
+  .crumb{display:flex;align-items:center;gap:6px;padding:2px 2px 14px;font-size:13px}
+  .crumb a{color:var(--accent);text-decoration:none;cursor:pointer}
+  .crumb span{color:var(--sub)}
+
+  h2{font-size:16px;font-weight:700;margin:2px 0 0}
+  .sec{margin-bottom:10px}
+
+  .hrow{padding:12px 0 0}
+  .hrow .hl, .hl{font-size:15px;font-weight:700;display:flex;align-items:center;gap:8px}
+  .hl .cd{font-size:11px;color:var(--accent);font-weight:700}
+  .range{font-size:12px;color:var(--sub);margin-top:4px}
+  .note{font-size:11px;color:var(--warn);margin-top:4px}
+
+  .src{margin-top:12px;padding-top:10px;border-top:1px solid var(--line)}
+  .src .t{font-size:11px;color:var(--sub);line-height:1.6}
+  .src a{display:inline-block;margin-top:7px;font-size:12px;color:var(--accent);
+    font-weight:700;text-decoration:none}
+
+  .hintbar{font-size:12px;color:var(--sub);padding:4px 4px 12px;line-height:1.6}
+  .strip{display:flex; gap:2px; margin-top:10px}
+  .strip .d{flex:1 1 0; min-width:0; text-align:center; border-radius:6px;
+    padding:5px 0 4px; font-size:9px; line-height:1.45; border:1px solid transparent}
+  .strip .d .n{display:block; font-size:12px; font-weight:700}
+  .strip .d.term{background:#3A2F12; color:var(--warn); border-color:#5c4c1e}
+  .strip .d.seasonal{background:#16303f; color:#5FB6D9; border-color:#244a5f}
+  .strip .d.national{background:#3A2F12; color:var(--warn)}
+  .strip .d.weekend{background:#1E2733; color:#93A0AE}
+  .strip .d.school{background:#10151B; color:#3E4A58}
+  .strip .d.today{outline:1px solid var(--accent); outline-offset:-1px}
+  .legend{font-size:10px; color:#5A6675; margin-top:8px; display:flex; gap:12px; flex-wrap:wrap; align-items:center}
+  .sw{display:inline-block; width:8px; height:8px; border-radius:2px; margin-right:4px; vertical-align:middle}
+  .box{background:#12171E;border:1px solid var(--line);border-radius:12px;
+    padding:12px 14px;margin:6px 0}
+  .box .bt{font-size:11px;color:var(--warn);font-weight:700}
+  .box p{margin:6px 0 0;font-size:11px;color:var(--sub);line-height:1.8}
+
+  .kv{display:flex;padding-top:7px;font-size:12px}
+  .kv b{width:76px;color:var(--sub);font-weight:400;flex:none}
+  .kv span{color:var(--text)}
+
+  .empty{text-align:center;padding:34px 20px}
+  .empty h3{margin:0;font-size:15px}
+  .empty p{margin:10px 0 0;font-size:12px;color:var(--sub);line-height:1.8;white-space:pre-line}
+  .empty a{display:inline-block;margin-top:16px;color:var(--accent);font-size:13px;font-weight:700}
+
+  input{
+    width:100%;background:var(--card2);border:0;border-radius:8px;
+    padding:10px;color:var(--text);font-size:12px;font-family:inherit;
+    margin-top:10px;outline:none;
+  }
+  input::placeholder{color:#5A6675}
+  .btns{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
+  .btn{border:0;border-radius:20px;padding:9px 18px;font-size:13px;font-weight:700;
+    font-family:inherit;cursor:pointer;background:var(--accent);color:#0B1A22}
+  .btn.ghost{background:#2A323D;color:var(--text)}
+</style>
+</head>
+<body>
+<div id="phone">
+  <header>
+    <h1>假期表</h1>
+    <div class="sub" id="subtitle">加载中…</div>
+  </header>
+  <main id="main"></main>
+  <nav>
+    <button data-tab="0" class="on">关注</button>
+    <button data-tab="1">全部</button>
+    <button data-tab="2">计划</button>
+    <button data-tab="3">数据</button>
+  </nav>
+</div>
+
+<script>
+let DATA = null;
+let tracks = new Set(JSON.parse(localStorage.getItem('jiaqi.tracks') || '[]'));
+let navLevel = 0, curRegion = null, curCity = null;
+
+const $ = s => document.querySelector(s);
+const main = $('#main');
+
+const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const today = () => { const d = new Date(); d.setHours(0,0,0,0); return d; };
+const ymd = s => { const [y,m,d] = s.split('-').map(Number); return new Date(y, m-1, d); };
+const pretty = s => { const [_,m,d] = s.split('-').map(Number); return `${m}月${d}日`; };
+const fullPretty = s => { const [y,m,d] = s.split('-').map(Number); return `${y}年${m}月${d}日`; };
+const daysTo = s => Math.round((ymd(s) - today()) / 86400000);
+
+function stageLabel(k){
+  const m = (DATA.stageMeta||[]).find(s => s.key === k);
+  return m ? m.label : k;
+}
+function stageKeys(){ return (DATA.stageMeta||[]).map(s => s.key); }
+
+/** 最近的假期：正在放的优先，其次最近要来的 */
+function nextOf(policy){
+  if(!policy) return null;
+  const t = today();
+  let best = null;
+  for(const h of policy.holidays || []){
+    const s = ymd(h.start);
+    const e = h.end ? ymd(h.end) : null;
+    const ongoing = s <= t && (!e || e >= t);
+    if(ongoing){
+      if(!best || !best.ongoing) best = {h, days: Math.round((s-t)/86400000), ongoing:true};
+    } else if(s > t){
+      if(!best || (!best.ongoing && s < ymd(best.h.start))){
+        best = {h, days: Math.round((s-t)/86400000), ongoing:false};
+      }
+    }
+  }
+  return best;
+}
+
+function gradeTag(g){
+  const map = {official:['official','官方'], media:['media','媒体'], aggregate:['aggregate','汇总']};
+  const [cls, txt] = map[g] || ['media','来源'];
+  return `<span class="tag ${cls}">${txt}</span>`;
+}
+
+function saveTracks(){ localStorage.setItem('jiaqi.tracks', JSON.stringify([...tracks])); }
+
+// ------------------------------------------------------------------ 休息日计算
+const WD = ['日','一','二','三','四','五','六'];
+
+function fmtDate(d){
+  return d.getFullYear() + '-' + String(d.getMonth()+1).padStart(2,'0') + '-' + String(d.getDate()).padStart(2,'0');
+}
+
+/** 把某个地区某个学段的「所有已知放假区间」收成一张表 */
+function restRanges(region, city, stage){
+  const out = [];
+  const pol = (city.policies && city.policies[stage])
+    || (region.commonPolicies ? region.commonPolicies[stage] : null);
+  if(pol){
+    for(const h of pol.holidays) out.push({label:h.label, start:h.start, end:h.end || h.start, kind:'term'});
+  }
+  if(region.seasonal){
+    const short = (city.name || '').replace(/市$/,'');
+    for(const it of region.seasonal.items){
+      if(it.city && short && !it.city.startsWith(short)) continue;
+      out.push({label:it.label, start:it.start, end:it.end || it.start, kind:'seasonal'});
+    }
+  }
+  const nh = DATA.nationalHolidays || {};
+  for(const it of nh.items || []){
+    out.push({label:it.label, start:it.start, end:it.end || it.start, kind:'national'});
+  }
+  return out;
+}
+
+/** 从今天起 n 天，每天是休息还是上课 */
+function restTimeline(region, city, stage, n){
+  const ranges = restRanges(region, city, stage);
+  const weekend = ((DATA.weekendRule || {}).rest) || [5,6];
+  const out = [];
+  const base = today();
+  for(let i=0;i<n;i++){
+    const d = new Date(base); d.setDate(base.getDate() + i);
+    const ymd = fmtDate(d);
+    let hit = null;
+    for(const r of ranges){
+      if(ymd >= r.start && ymd <= r.end){ hit = r; break; }
+    }
+    const isWeekend = weekend.indexOf(d.getDay()) >= 0;
+    if(hit) out.push({date:ymd, day:d.getDate(), wd:WD[d.getDay()], rest:true, reason:hit.label, kind:hit.kind, weekend:isWeekend});
+    else if(isWeekend) out.push({date:ymd, day:d.getDate(), wd:WD[d.getDay()], rest:true, reason:'周末', kind:'weekend', weekend:true});
+    else out.push({date:ymd, day:d.getDate(), wd:WD[d.getDay()], rest:false, reason:'', kind:'school', weekend:false});
+  }
+  return out;
+}
+
+/** 下一个休息日（跳过今天） */
+function nextRest(region, city, stage){
+  const tl = restTimeline(region, city, stage, 120);
+  for(const d of tl){
+    if(d.rest && d.date > fmtDate(today())) return d;
+  }
+  return null;
+}
+
+// ------------------------------------------------------------------ 关注
+function showTracks(){
+  navLevel = 0; setTab(0);
+  if(tracks.size === 0){
+    main.innerHTML = `
+      <div class="card plain empty">
+        <h3>还没有关注的学校或地区</h3>
+        <p>去「全部」里选一个城市，点学段右侧的 ＋ 就能加到这里。
+学校假期大多跟着所属地区教育局的校历走，所以关注地区 = 关注这一片学校。</p>
+        <a id="goall">去挑一个 →</a>
+      </div>`;
+    $('#goall').onclick = showAll;
+    return;
+  }
+  let html = '';
+  for(const u of (DATA.universities || [])){
+    const key = 'uni|' + u.id;
+    if(!tracks.has(key)) continue;
+    html += uniTrackCard(u, key);
+  }
+  for(const r of DATA.regions){
+    for(const c of r.cities){
+      for(const sk of stageKeys()){
+        const key = `${r.code}|${c.code}|${sk}`;
+        if(!tracks.has(key) || !c.policies[sk]) continue;
+        html += trackCard(r, c, sk, key);
+      }
+    }
+  }
+  html += `<div class="hintbar" style="padding-top:16px">点开卡片看详情；长按可以取消关注</div>`;
+  main.innerHTML = html;
+  main.querySelectorAll('[data-key]').forEach(el => {
+    const key = el.dataset.key;
+    let go;
+    if(key.startsWith('uni|')){
+      const u = (DATA.universities || []).find(x => 'uni|' + x.id === key);
+      if(!u) return;
+      go = () => showUniversity(u);
+    } else {
+      const [rc, cc, sk] = key.split('|');
+      const r = DATA.regions.find(x => x.code === rc);
+      const c = r.cities.find(x => x.code === cc);
+      go = () => showCity(r, c);
+    }
+    el.onclick = go;
+    let timer = null;
+    el.addEventListener('touchstart', () => { timer = setTimeout(() => {
+      if(confirm('不再关注这个地区？')){ tracks.delete(key); saveTracks(); showTracks(); }
+    }, 600); });
+    el.addEventListener('touchend', () => clearTimeout(timer));
+    el.addEventListener('contextmenu', e => {
+      e.preventDefault();
+      if(confirm('不再关注这个地区？')){ tracks.delete(key); saveTracks(); showTracks(); }
+    });
+  });
+}
+
+function trackCard(r, c, sk, key){
+  const p = c.policies[sk];
+  const nx = nextOf(p);
+  const cityShort = c.name.replace(/市$/, '');
+  let right = '';
+  let body = '';
+  if(nx){
+    const when = nx.ongoing ? `${nx.h.label}进行中` : `${nx.h.label} ${pretty(nx.h.start)} 开始`;
+    body += `<div class="meta">${esc(when)}</div>`;
+    if(nx.h.end){
+      body += `<div class="meta" style="margin-top:2px">${pretty(nx.h.start)} — ${pretty(nx.h.end)}${nx.h.endDerived ? '（推算）' : ''}</div>`;
+    }
+    right = `<div class="count"><b>${nx.ongoing ? '放' : nx.days}</b><span>${nx.ongoing ? '假中' : '天后'}</span></div>`;
+  } else {
+    body += `<div class="meta">暂无假期数据</div>`;
+  }
+  return `<div class="card row" data-key="${key}">
+    <div class="col grow">
+      <div class="name">${esc(cityShort)} · ${esc(stageLabel(sk))}</div>
+      ${body}
+    </div>${right}
+  </div>`;
+}
+
+function uniTrackCard(u, key){
+  const nx = nextOf({holidays: u.holidays});
+  let body = '', right = '';
+  if(nx){
+    body += `<div class="meta">${esc(nx.ongoing ? nx.h.label + '进行中' : nx.h.label + ' ' + pretty(nx.h.start) + ' 开始')}</div>`;
+    if(nx.h.end) body += `<div class="meta" style="margin-top:2px">${pretty(nx.h.start)} — ${pretty(nx.h.end)}${nx.h.endDerived ? '（推算）' : ''}</div>`;
+    right = `<div class="count"><b>${nx.ongoing ? '放' : nx.days}</b><span>${nx.ongoing ? '假中' : '天后'}</span></div>`;
+  } else {
+    body += `<div class="meta">暂无假期数据</div>`;
+  }
+  return `<div class="card row" data-key="${key}">
+    <div class="col grow">
+      <div class="name">${esc(u.name)}</div>
+      <div class="meta" style="margin-top:3px">${esc(u.province)}${esc(u.city)} · 大学</div>
+      ${body}
+    </div>${right}
+  </div>`;
+}
+
+// ------------------------------------------------------------------ 全部
+function showAll(){
+  navLevel = 1; setTab(1); curRegion = null; curCity = null;
+  let html = `<div class="hintbar">按地区查，或者直接搜城市 / 省份 / 高校名。</div>`;
+  html += `<input id="q" placeholder="搜：石家庄 / 山东 / 清华" autocomplete="off">`;
+  html += `<div id="qres"></div>`;
+  html += `<div id="defcontent">`;
+  html += `<div class="card row" data-nav="national">
+    <div class="col grow"><div class="name">全国法定节假日</div>
+    <div class="meta">${(DATA.nationalHolidays || {}).year || ''} 年 · ${((DATA.nationalHolidays || {}).items || []).length} 个节日 · 国务院办公厅</div></div>
+    <div class="arrow">›</div></div>`;
+  html += `<div class="card row" data-nav="uni">
+    <div class="col grow"><div class="name">高校校历</div>
+    <div class="meta">${(DATA.universities || []).length} 所 · 按学校收录，可单独关注</div></div>
+    <div class="arrow">›</div></div>`;
+  for(const r of DATA.regions){
+    const n = r.cities.length;
+    const meta = n === 0
+      ? '<span style="color:var(--warn)">待补 · 官方尚未公布</span>'
+      : (n === 1 ? '全市统一' : n + ' 个城市');
+    html += `<div class="card row" data-region="${r.code}">
+      <div class="col grow">
+        <div class="name">${esc(r.name)}</div>
+        <div class="meta">${meta}</div>
+      </div><div class="arrow">›</div>
+    </div>`;
+  }
+  const cov = DATA.coverage || {};
+  if((cov.missing || []).length){
+    html += `<div class="box"><div class="bt">未收录 ${cov.missing.length} / ${cov.total} 个省级地区</div>
+      <p>${cov.missing.map(m => esc(m.name)).join(' · ')}</p>
+      <p style="margin-top:6px">不是这些地方没假期，是还没拿到能核对的官方校历。宁可不写，也不拿二手日期充数。</p></div>`;
+  }
+  html += `</div>`;   // defcontent
+  main.innerHTML = html;
+  const q = $('#q');
+  if(q) q.oninput = () => doSearch(q.value);
+  main.querySelectorAll('[data-nav]').forEach(el => {
+    el.onclick = () => el.dataset.nav === 'national' ? showNational() : showUniversities();
+  });
+  main.querySelectorAll('[data-region]').forEach(el => {
+    el.onclick = () => {
+      const r = DATA.regions.find(x => x.code === el.dataset.region);
+      if(!r) return;
+      if(r.cities.length === 0) showPending(r);
+      else if(r.cities.length === 1) showCity(r, r.cities[0]);
+      else showRegion(r);
+    };
+  });
+}
+
+// ------------------------------------------------------------------ 全局搜索
+function doSearch(kw){
+  const res = document.querySelector('#qres');
+  const def = document.querySelector('#defcontent');
+  if(!res || !def) return;
+  const k = (kw || '').trim();
+  if(!k){ res.innerHTML = ''; def.style.display = ''; return; }
+  def.style.display = 'none';
+
+  const hits = [];
+  for(const r of DATA.regions){
+    if(r.name.includes(k)) hits.push({t:'region', r});
+    for(const c of r.cities){
+      if(c.name.includes(k)) hits.push({t:'city', r, c});
+    }
+  }
+  for(const u of DATA.universities || []){
+    if((u.name + u.province + u.city).includes(k)) hits.push({t:'uni', u});
+  }
+
+  if(hits.length === 0){
+    res.innerHTML = `<div class="card plain empty"><h3>没搜到「${esc(k)}」</h3>
+      <p>试试城市名（石家庄）、省份名（山东）、或者高校名（清华）。</p></div>`;
+    return;
+  }
+
+  const shown = hits.slice(0, 40);
+  res.innerHTML = shown.map((h, i) => {
+    if(h.t === 'region'){
+      const n = h.r.cities.length;
+      return `<div class="card row" data-hit="${i}">
+        <div class="col grow"><div class="name">${esc(h.r.name)}</div>
+        <div class="meta">省份 · ${n} 个地级行政区</div></div><div class="arrow">›</div></div>`;
+    }
+    if(h.t === 'city'){
+      const has = Object.keys(h.c.policies).length > 0;
+      const meta = has ? stageKeys().filter(sk => h.c.policies[sk]).map(stageLabel).join(' · ')
+        : (h.c.history ? `2026 年 ${pretty(h.c.history.primary)} 放假` : (h.r.commonPolicies ? '省级口径' : '未收录'));
+      return `<div class="card row" data-hit="${i}">
+        <div class="col grow"><div class="name">${esc(h.c.name)}</div>
+        <div class="meta">${esc(h.r.name)} · ${esc(meta)}</div></div><div class="arrow">›</div></div>`;
+    }
+    const nx = nextOf({holidays: h.u.holidays});
+    const meta = nx ? `${nx.h.label} ${pretty(nx.h.start)} 开始` : '暂无数据';
+    return `<div class="card row" data-hit="${i}">
+      <div class="col grow"><div class="name">${esc(h.u.name)}</div>
+      <div class="meta">高校 · ${esc(h.u.province)}${esc(h.u.city)} · ${esc(meta)}</div></div><div class="arrow">›</div></div>`;
+  }).join('') + (hits.length > 40 ? `<div class="hintbar">还有 ${hits.length - 40} 条，输入更具体的词。</div>` : '');
+
+  res.querySelectorAll('[data-hit]').forEach(el => {
+    const h = shown[+el.dataset.hit];
+    if(!h) return;
+    el.onclick = () => {
+      if(h.t === 'region') showRegion(h.r);
+      else if(h.t === 'city') showCity(h.r, h.c);
+      else showUniversity(h.u);
+    };
+  });
+}
+
+// ------------------------------------------------------------------ 待补
+function showPending(r){
+  navLevel = 2; curRegion = r;
+  let html = `<div class="crumb"><a id="back">全部</a><span>›</span><span>${esc(r.name)}</span></div>`;
+  html += `<div class="card plain">
+    <div class="name" style="color:var(--warn)">${esc(r.name)} · 数据待补</div>
+    <p class="tiny" style="margin:10px 0 0">${esc(r.pending || '这个省暂时还没有可核对的数据。')}</p>
+    ${r.pendingHint ? `<p class="tiny" style="margin-top:8px">${esc(r.pendingHint)}</p>` : ''}
+  </div>`;
+  html += `<div class="box"><div class="bt">为什么空着</div>
+    <p>这套数据只收能从公开渠道核对到的日期。查不到就写「待补」，不拿别处的估算填进来——填错了比空着更糟。
+已经贴了出处的条目，点开任何一条都能看到原文链接和核对日期。</p></div>`;
+  if(r.seasonal){
+    html += `<div class="card plain">
+      <div class="name">春秋假</div>
+      <div class="meta" style="margin-top:3px">${esc(r.seasonal.policyText||'')}</div>
+      ${(r.seasonal.items||[]).length === 0 ? '<p class="tiny" style="color:var(--warn);margin:8px 0 0">具体日期由各市公布，目前还没查到。</p>' : ''}
+      ${r.seasonal.source && r.seasonal.source.url ? `
+        <div class="src">
+          <div class="t">来源 ${gradeTag(r.seasonal.source.grade)} ${esc(r.seasonal.source.publisher||'')}</div>
+          <div class="t" style="margin-top:3px">${esc(r.seasonal.source.title)}</div>
+          <a href="${esc(r.seasonal.source.url)}" target="_blank" rel="noopener">打开原文 ↗</a>
+        </div>` : ''}
+    </div>`;
+  }
+  main.innerHTML = html;
+  $('#back').onclick = showAll;
+}
+
+// ------------------------------------------------------------------ 法定节假日
+function showNational(){
+  navLevel = 2; curRegion = null;
+  const n = DATA.nationalHolidays || {items: [], source: {}};
+  const t = today();
+  let html = `<div class="crumb"><a id="back">全部</a><span>›</span><span>全国法定节假日</span></div>`;
+  html += `<div class="card plain">
+    <div class="name">${n.year} 年 · 全国统一</div>
+    <div class="meta" style="margin-top:4px">对全国机关、学校、企业都适用。学校通常在此基础上再按校历调整。</div>
+  </div>`;
+
+  for(const h of n.items){
+    const s = ymd(h.start), e = h.end ? ymd(h.end) : s;
+    const ongoing = s <= t && e >= t;
+    const future = s > t;
+    let cd = '';
+    if(ongoing) cd = '<span class="cd">放假中</span>';
+    else if(future) cd = `<span class="cd">还有 ${Math.round((s - t) / 86400000)} 天</span>`;
+    const range = h.start === h.end ? fullPretty(h.start) : `${fullPretty(h.start)} — ${fullPretty(h.end)}`;
+    html += `<div class="card plain">
+      <div class="hl">${esc(h.label)}${cd}</div>
+      <div class="range">${esc(range)} · 共 ${h.days} 天</div>
+      ${h.note ? `<div class="note">${esc(h.note)}</div>` : ''}
+    </div>`;
+  }
+
+  if(n.source && n.source.title){
+    html += `<div class="box"><div class="bt">来源 ${gradeTag(n.source.grade)}</div>
+      <p>${esc(n.source.publisher)}<br>${esc(n.source.title)}<br>${esc(n.source.docNo || '')} · 发布 ${esc(n.source.published || '')}</p>
+      ${n.source.url ? `<a class="tiny" style="color:var(--accent);font-weight:700;text-decoration:none" href="${esc(n.source.url)}" target="_blank" rel="noopener">打开原文 ↗</a>` : ''}
+    </div>`;
+  }
+
+  main.innerHTML = html;
+  $('#back').onclick = showAll;
+}
+
+// ------------------------------------------------------------------ 高校
+function showUniversities(){
+  navLevel = 2; curRegion = null;
+  const list = DATA.universities || [];
+  const withCal = list.filter(u => (u.holidays || []).length > 0).length;
+  let html = `<div class="crumb"><a id="back">全部</a><span>›</span><span>高校校历</span></div>`;
+  html += `<div class="hintbar">全国 ${list.length} 所高校，其中 ${withCal} 所有校历数据。没校历的点进去可以查教务处。</div>`;
+  html += `<input id="uq" placeholder="搜学校名 / 城市 / 985 / 211" autocomplete="off">`;
+  html += `<div id="ulist"></div>`;
+  main.innerHTML = html;
+  $('#back').onclick = showAll;
+
+  const render = kw => {
+    const k = (kw || '').trim();
+    let filtered = k ? list.filter(u => (u.name + u.province + u.city + (u.tags||[]).join(' ')).includes(k)) : list;
+    const total = filtered.length;
+    filtered = filtered.slice(0, 60);
+    if(total === 0){
+      $('#ulist').innerHTML = `<div class="card plain empty"><h3>没找到</h3>
+        <p>共收录 ${list.length} 所高校。试试简称（北大）、城市（武汉）或标签（985）。</p></div>`;
+      return;
+    }
+    $('#ulist').innerHTML = filtered.map(u => {
+      const on = tracks.has('uni|' + u.id);
+      const nx = (u.holidays || []).length ? nextOf({holidays: u.holidays}) : null;
+      const tags = (u.tags || []).filter(t => ['985','211','双一流','C9'].includes(t)).slice(0,3);
+      const meta = nx
+        ? `${nx.h.label} ${pretty(nx.h.start)} 开始${nx.h.end ? ' · ' + pretty(nx.h.end) + ' 结束' : ''}`
+        : '校历未收录';
+      return `<div class="card row" data-uni="${u.id}">
+        <div class="col grow">
+          <div class="name">${esc(u.name)}${on ? '<span class="tag official" style="background:#2A323D;color:#8B949E">已关注</span>' : ''}</div>
+          <div class="meta">${tags.length ? tags.map(t => `<span class="tag media">${esc(t)}</span>`).join('') + ' ' : ''}${esc(u.province)} · ${esc(meta)}</div>
+        </div><div class="arrow">›</div></div>`;
+    }).join('') + (total > 60 ? `<div class="hintbar">还有 ${total - 60} 所，输入更具体的词缩小范围。</div>` : '');
+    $('#ulist').querySelectorAll('[data-uni]').forEach(el => {
+      el.onclick = () => showUniversity(list.find(x => x.id === el.dataset.uni));
+    });
+  };
+  render('');
+  $('#uq').oninput = e => render(e.target.value);
+}
+
+function showUniversity(u){
+  navLevel = 3; curRegion = null;
+  const key = 'uni|' + u.id;
+  const on = tracks.has(key);
+  const nx = nextOf({holidays: u.holidays});
+  let html = `<div class="crumb"><a id="back">高校校历</a><span>›</span><span>${esc(u.name)}</span></div>`;
+  html += `<div class="card plain">
+    <div class="row">
+      <div class="col grow">
+        <div class="name">${esc(u.name)}</div>
+        <div class="meta" style="margin-top:3px">${esc(u.province)}${esc(u.city)} · 大学</div>
+      </div>
+      <div class="plus ${on ? 'on' : ''}" id="utrack">${on ? '已关注' : '＋'}</div>
+    </div>`;
+  for(const h of u.holidays){
+    const isNext = nx && nx.h === h;
+    const cd = isNext ? (nx.ongoing ? '<span class="cd">进行中</span>' : `<span class="cd">还有 ${nx.days} 天</span>`) : '';
+    const range = h.end
+      ? `${fullPretty(h.start)} — ${fullPretty(h.end)}${h.endDerived ? '（结束日期为推算）' : ''}`
+      : `${fullPretty(h.start)} 起`;
+    html += `<div class="hrow">
+      <div class="hl">${esc(h.label)}${cd}</div>
+      <div class="range">${esc(range)}</div>
+      ${h.note ? `<div class="note">${esc(h.note)}</div>` : ''}
+    </div>`;
+  }
+  if(!(u.holidays || []).length){
+    const q = encodeURIComponent(u.name + ' 2026-2027学年 校历 寒假');
+    html += `<div class="box"><div class="bt">这所学校还没有校历数据</div>
+      <p>全国 ${(DATA.universities||[]).length} 所高校里，现在只有 14 所能查到 2026-2027 学年的校历。
+高校校历由各校教务处自行发布，没有统一来源，也没法一次性全抓。</p>
+      <p style="margin-top:8px"><a style="color:var(--accent);font-weight:700;text-decoration:none"
+        href="https://www.baidu.com/s?wd=${q}" target="_blank" rel="noopener">去搜这所学校的校历 ↗</a></p>
+      <p style="margin-top:6px"><a style="color:var(--sub);text-decoration:none"
+        href="https://www.baidu.com/s?wd=${encodeURIComponent(u.name + ' 教务处')}" target="_blank" rel="noopener">或者直接找教务处 ↗</a></p></div>`;
+  }
+  if(u.source && u.source.title){
+    html += `<div class="src">
+      <div class="t">来源 ${gradeTag(u.source.grade)} ${esc(u.source.publisher || '')}</div>
+      <div class="t" style="margin-top:3px">${esc(u.source.title)}</div>
+      <div class="t" style="margin-top:3px">发布 ${esc(u.source.published || '')}</div>
+      ${u.source.url ? `<a href="${esc(u.source.url)}" target="_blank" rel="noopener">打开原文 ↗</a>` : ''}
+    </div>`;
+  }
+  html += `</div>`;
+  html += `<div class="box"><div class="bt">关于高校校历</div><p>${esc(DATA.universityNote || '')}</p></div>`;
+
+  main.innerHTML = html;
+  $('#back').onclick = showUniversities;
+  $('#utrack').onclick = () => {
+    if(tracks.has(key)) tracks.delete(key); else tracks.add(key);
+    saveTracks(); showUniversity(u);
+  };
+}
+
+function showRegion(r){
+  navLevel = 2; curRegion = r;
+  let html = `<div class="crumb"><a id="back">全部</a><span>›</span><span>${esc(r.name)}</span></div>`;
+  if(r.pending){
+    html += `<div class="box"><div class="bt">这个省还没查到正式文件</div>
+      <p>${esc(r.pending)}</p>
+      ${r.pendingHint ? `<p style="margin-top:6px">${esc(r.pendingHint)}</p>` : ''}</div>`;
+  }
+  const withData = r.cities.filter(c => Object.keys(c.policies).length > 0).length;
+  if(r.cities.length > 1){
+    html += `<div class="hintbar">${esc(r.name)}共 ${r.cities.length} 个地级行政区，其中 ${withData} 个已收录数据${
+      r.commonPolicies ? '；其余按省级口径' : '，其余显示「未收录」'}。点开还能看「接下来 14 天」和春秋假。</div>`;
+  }
+  for(const c of r.cities){
+    const stages = stageKeys().filter(sk => c.policies[sk]).map(stageLabel).join(' · ');
+    const meta = stages
+      ? `<span>${stages}</span>`
+      : (c.history
+          ? `<span style="color:var(--sub)">未收录今年 · 2026 年 ${pretty(c.history.primary)} 放假</span>`
+          : '<span>未收录</span>');
+    html += `<div class="card row" data-city="${c.code}">
+      <div class="col grow">
+        <div class="name">${esc(c.name)}</div>
+        <div class="meta">${meta}</div>
+      </div><div class="arrow">›</div>
+    </div>`;
+  }
+  if(r.common && (r.common.springStart || r.common.note)){
+    let t = '';
+    if(r.common.springStart) t += `春季学期开学 ${fullPretty(r.common.springStart)}。`;
+    if(r.common.note) t += r.common.note;
+    html += `<div class="box"><div class="bt">全省说明</div><p>${esc(t)}</p></div>`;
+  }
+  main.innerHTML = html;
+  $('#back').onclick = showAll;
+  main.querySelectorAll('[data-city]').forEach(el => {
+    el.onclick = () => showCity(r, r.cities.find(x => x.code === el.dataset.city));
+  });
+}
+
+function showCity(r, c){
+  navLevel = 3; curRegion = r; curCity = c;
+  let html = `<div class="crumb"><a id="back">${esc(r.name)}</a><span>›</span><span>${esc(c.name)}</span></div>`;
+
+  // 接下来 14 天：哪些天不用去学校
+  let repStage = null;
+  for(const sk of stageKeys()) if(c.policies[sk]){ repStage = sk; break; }
+  if(!repStage && r.commonPolicies) for(const sk of stageKeys()) if(r.commonPolicies[sk]){ repStage = sk; break; }
+  if(!repStage && stageKeys().length) repStage = stageKeys()[0];   // 只有春秋假的城市，用小学口径算周末
+  if(repStage){
+    const tl = restTimeline(r, c, repStage, 14);
+    const todayStr = fmtDate(today());
+    const restCount = tl.filter(d => d.rest).length;
+    html += `<div class="card plain">
+      <div class="row" style="align-items:baseline">
+        <div class="col grow"><div class="name" style="font-size:14px">接下来 14 天</div></div>
+        <div style="font-size:12px;color:var(--accent);font-weight:700">休 ${restCount} 天</div>
+      </div>
+      <div class="strip">` +
+      tl.map(d => `<div class="d ${d.kind} ${d.date===todayStr?'today':''}" title="${esc(d.reason||'上课')}">
+          <span class="n">${d.day}</span>${d.wd}</div>`).join('') +
+      `</div>
+      <div class="legend">
+        <span><i class="sw" style="background:#3A2F12;border:1px solid #5c4c1e"></i>放假</span>
+        <span><i class="sw" style="background:#16303f;border:1px solid #244a5f"></i>春秋假</span>
+        <span><i class="sw" style="background:#1E2733"></i>周末</span>
+        <span><i class="sw" style="background:#10151B;border:1px solid #242C36"></i>上课</span>
+      </div>
+      <div class="tiny" style="margin-top:8px">按「${esc(stageLabel(repStage))}」算的，周末按周六日双休；高中/寄宿制可能周六上课，以学校通知为准。</div>
+    </div>`;
+  }
+
+  const useProvince = Object.keys(c.policies).length === 0 && !!r.commonPolicies;
+
+  if(!useProvince && Object.keys(c.policies).length === 0){
+    if(c.history){
+      html += `<div class="card plain">
+        <div class="name" style="font-size:14px">2026 年（去年）的安排</div>
+        <div class="meta" style="margin-top:6px">2026-2027 学年还没公布，这是上一学年的，供参考。</div>
+        <div class="hrow"><div class="hl">义务教育（小学/初中）</div><div class="range">${fullPretty(c.history.primary)} 放假</div></div>
+        <div class="hrow"><div class="hl">普通高中</div><div class="range">${fullPretty(c.history.senior)} 放假</div></div>
+        ${c.history.springStart ? `<div class="hrow"><div class="hl">春季开学</div><div class="range">${fullPretty(c.history.springStart)}</div></div>` : ''}
+        ${c.history.note ? `<div class="note">${esc(c.history.note)}</div>` : ''}
+        ${r.historySource ? `<div class="src">
+          <div class="t">来源 ${gradeTag(r.historySource.grade)} ${esc(r.historySource.publisher||'')}</div>
+          <div class="t" style="margin-top:3px">${esc(r.historySource.title)}</div>
+          <a href="${esc(r.historySource.url)}" target="_blank" rel="noopener">打开原文 ↗</a>
+        </div>` : ''}
+      </div>`;
+    } else {
+      html += `<div class="box"><div class="bt">该市校历未收录</div>
+        <p>${esc(r.name)}${esc(c.name)}的 2026-2027 学年校历还没查到。上面那条「接下来 14 天」只按周末和全国节假日算的，不算寒暑假。</p></div>`;
+    }
+  }
+
+  for(const sk of stageKeys()){
+    const p = useProvince ? (r.commonPolicies[sk] || null) : c.policies[sk];
+    if(!p) continue;
+    const key = `${r.code}|${c.code}|${sk}`;
+    const on = tracks.has(key);
+    const nx = nextOf(p);
+
+    html += `<div class="card plain">
+      <div class="row">
+        <div class="col grow">
+          <div class="name">${esc(stageLabel(sk))}</div>
+          ${useProvince ? '<div class="meta" style="margin-top:3px;color:var(--warn)">省级口径 · 该市未单独发布，按全省安排</div>' : (p.scope ? `<div class="meta" style="margin-top:3px">${esc(p.scope)}</div>` : '')}
+        </div>
+        <div class="plus ${on ? 'on' : ''}" data-track="${key}">${on ? '已关注' : '＋'}</div>
+      </div>`;
+
+    for(const h of p.holidays){
+      const isNext = nx && nx.h === h;
+      let cd = '';
+      if(isNext) cd = nx.ongoing ? '<span class="cd">进行中</span>' : `<span class="cd">还有 ${nx.days} 天</span>`;
+      let range = fullPretty(h.start);
+      if(h.end) range += ` — ${fullPretty(h.end)}` + (h.endDerived ? '（结束日期为推算）' : '');
+      else range += ' 起';
+      html += `<div class="hrow">
+        <div class="hl">${esc(h.label)}${cd}</div>
+        <div class="range">${esc(range)}</div>
+        ${h.note ? `<div class="note">${esc(h.note)}</div>` : ''}
+      </div>`;
+    }
+
+    if(p.source && p.source.title){
+      html += `<div class="src">
+        <div class="t">来源 ${gradeTag(p.source.grade)} ${esc(p.source.publisher || '')}</div>
+        <div class="t" style="margin-top:3px">${esc(p.source.title)}</div>
+        <div class="t" style="margin-top:3px">${p.source.published ? '发布 ' + esc(p.source.published) : ''}${p.source.docNo ? ' · ' + esc(p.source.docNo) : ''}</div>
+        ${p.source.url ? `<a href="${esc(p.source.url)}" target="_blank" rel="noopener">打开原文 ↗</a>` : ''}
+      </div>`;
+    }
+    html += `</div>`;
+  }
+
+  // 春秋假
+  if(r.seasonal && (r.seasonal.items || []).length){
+    const short = (c.name || '').replace(/市$/, '');
+    const mine = r.seasonal.items.filter(it => !it.city || it.city.startsWith(short));
+    if(mine.length){
+      html += `<div class="card plain">
+        <div class="name">春秋假</div>
+        <div class="meta" style="margin-top:3px">${esc(r.seasonal.policyText || '')}</div>`;
+      for(const it of mine){
+        const range = it.start === it.end ? fullPretty(it.start) : `${fullPretty(it.start)} — ${fullPretty(it.end)}`;
+        html += `<div class="hrow">
+          <div class="hl">${esc(it.label)}${it.city && it.city !== c.name ? `<span class="cd" style="color:var(--sub);font-weight:400"> ${esc(it.city)}</span>` : ''}</div>
+          <div class="range">${esc(range)}${it.scope ? ' · ' + esc(it.scope) : ''}</div>
+          ${it.note ? `<div class="note">${esc(it.note)}</div>` : ''}
+        </div>`;
+      }
+      if(r.seasonal.source && r.seasonal.source.url){
+        html += `<div class="src">
+          <div class="t">来源 ${gradeTag(r.seasonal.source.grade)} ${esc(r.seasonal.source.publisher || '')}</div>
+          <div class="t" style="margin-top:3px">${esc(r.seasonal.source.title)}</div>
+          <a href="${esc(r.seasonal.source.url)}" target="_blank" rel="noopener">打开原文 ↗</a>
+        </div>`;
+      }
+      html += `</div>`;
+    }
+  }
+
+  if(!c.policies.university){
+    html += `<div class="card plain">
+      <div class="name">大学</div>
+      <div class="meta" style="margin-top:3px">高校校历由各校自行制定</div>
+      <p class="tiny" style="margin:10px 0 0">${esc(DATA.universityNote || '')}</p>
+      <a class="tiny" id="gouni" style="color:var(--accent);font-weight:700;text-decoration:none;display:inline-block;margin-top:8px">去看高校校历 →</a>
+    </div>`;
+  }
+
+  main.innerHTML = html;
+  $('#back').onclick = () => { if(r.cities.length > 1) showRegion(r); else showAll(); };
+  main.querySelectorAll('[data-track]').forEach(el => {
+    el.onclick = e => {
+      e.stopPropagation();
+      const k = el.dataset.track;
+      if(tracks.has(k)) tracks.delete(k); else tracks.add(k);
+      saveTracks(); showCity(r, c);
+    };
+  });
+  const gouni = $('#gouni');
+  if(gouni) gouni.onclick = showUniversities;
+}
+
+// ------------------------------------------------------------------ 数据
+
+// ---------------------------------------------------------------- 假期计划
+const PLAN_KEY = 'jiaqi.plans.v1';
+
+function loadPlans(){
+  try { return JSON.parse(localStorage.getItem(PLAN_KEY) || '[]'); } catch(e){ return []; }
+}
+function savePlans(list){
+  try { localStorage.setItem(PLAN_KEY, JSON.stringify(list)); return true; }
+  catch(e){ alert('存不下了（浏览器本地存储满了）。删掉一些图片页再试。'); return false; }
+}
+
+function showPlans(){
+  navLevel = 2; curRegion = null;
+  const plans = loadPlans();
+  let html = '<div class="crumb"><a id="back">全部</a><span>›</span><span>假期计划</span></div>';
+  html += '<div class="hintbar">给某个假期排计划：每天做什么，能插图片。存在这台设备的浏览器里，换设备不同步。</div>';
+  if(plans.length === 0){
+    html += '<div class="card plain empty"><h3>还没有计划</h3><p>点下面「＋ 新建计划」，挑一个假期，然后往里加页。</p></div>';
+  }
+  html += plans.map(p => {
+    const n = (p.pages||[]).length;
+    return '<div class="card row" data-plan="' + p.id + '">'
+      + '<div class="col grow"><div class="name">' + esc(p.title) + '</div>'
+      + '<div class="meta">' + esc(p.start||'?') + ' — ' + esc(p.end||'?') + ' · ' + n + ' 页'
+      + (p.remind ? ' · 每天 ' + esc(p.remindTime||'09:00') + ' 提醒' : '') + '</div></div>'
+      + '<div class="arrow">›</div></div>';
+  }).join('');
+  html += '<div class="card plain"><button id="newplan" style="width:100%;padding:12px;background:#4CC2FF;color:#0B1A22;border:0;border-radius:8px;font-weight:700;font-size:14px;cursor:pointer">＋ 新建计划</button></div>';
+  main.innerHTML = html;
+  $('#back').onclick = showAll;
+  $('#newplan').onclick = newPlan;
+  main.querySelectorAll('[data-plan]').forEach(el => {
+    el.onclick = () => showPlan(el.dataset.plan);
+  });
+}
+
+function newPlan(){
+  const title = prompt('计划名字（比如「寒假计划」）');
+  if(!title) return;
+  const range = prompt('假期区间，格式：2027-01-18 到 2027-02-21');
+  if(!range) return;
+  const ds = range.match(/\d{4}-\d{2}-\d{2}/g) || [];
+  const st = ds[0] || '', en = ds[1] || ds[0] || '';
+  const plans = loadPlans();
+  const p = { id: 'p'+Date.now(), title: title, start: st, end: en,
+              remind: true, remindTime: '09:00', pages: [] };
+  plans.push(p);
+  if(savePlans(plans)) showPlan(p.id);
+}
+
+function showPlan(id){
+  const plans = loadPlans();
+  const p = plans.find(x => x.id === id);
+  if(!p) { showPlans(); return; }
+  let html = '<div class="crumb"><a id="back">计划</a><span>›</span><span>' + esc(p.title) + '</span></div>';
+  html += '<div class="card plain"><h3 style="margin:0 0 6px">' + esc(p.title) + '</h3>'
+    + '<div class="meta" style="margin-bottom:12px">' + esc(p.start||'?') + ' — ' + esc(p.end||'?') + '</div>'
+    + '<div style="display:flex;gap:8px;flex-wrap:wrap">'
+    + '<button id="addpage" class="mini">＋ 加一页</button>'
+    + '<button id="gen" class="mini">✨ 一键生成</button>'
+    + '<button id="delplan" class="mini">删除计划</button></div></div>';
+
+  if((p.pages||[]).length === 0){
+    html += '<div class="card plain empty"><h3>还没有页</h3><p>点「加一页」，或者「一键生成」按假期长度排。</p></div>';
+  }
+  (p.pages||[]).forEach((pg, i) => {
+    html += '<div class="card">'
+      + '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">'
+      + '<b style="font-size:13px;color:#4CC2FF">第 ' + (i+1) + ' 页 · ' + esc(pg.date||'') + '</b>'
+      + '<span style="display:flex;gap:6px">'
+      + '<button class="mini" data-edit="' + i + '">编辑</button>'
+      + '<button class="mini" data-del="' + i + '">删</button></span></div>'
+      + (pg.elements||[]).map(el => renderEl(el)).join('')
+      + '</div>';
+  });
+  main.innerHTML = html;
+  $('#back').onclick = showPlans;
+  $('#addpage').onclick = () => addPage(id);
+  $('#gen').onclick = () => genPages(id);
+  $('#delplan').onclick = () => {
+    if(!confirm('删掉「' + p.title + '」？')) return;
+    const l = loadPlans().filter(x => x.id !== id);
+    if(savePlans(l)) showPlans();
+  };
+  main.querySelectorAll('[data-edit]').forEach(el => {
+    el.onclick = () => editPage(id, +el.dataset.edit);
+  });
+  main.querySelectorAll('[data-del]').forEach(el => {
+    el.onclick = () => {
+      const l = loadPlans();
+      l.find(x => x.id === id).pages.splice(+el.dataset.del, 1);
+      if(savePlans(l)) showPlan(id);
+    };
+  });
+  main.querySelectorAll('img.pgimg').forEach(img => {
+    img.onclick = () => window.open(img.src, '_blank');
+  });
+}
+
+function renderEl(el){
+  if(el.type === 'text'){
+    const size = el.size || 16;
+    return '<div style="font-size:' + size + 'px;line-height:1.5;margin:4px 0;color:#E6EDF3;white-space:pre-wrap">' + esc(el.text||'') + '</div>';
+  }
+  if(el.type === 'image' && el.src){
+    return '<img class="pgimg" src="' + el.src + '" style="max-width:100%;border-radius:8px;margin:6px 0;cursor:zoom-in">';
+  }
+  if(el.type === 'video' || el.type === 'audio'){
+    return '<div style="padding:8px;background:#1E2733;border-radius:6px;font-size:12px;color:#93A0AE;margin:4px 0">'
+      + (el.type==='video' ? '▶ ' : '♪ ') + esc(el.name||'文件')
+      + ' — 网页版不能内嵌播放，桌面版 / 手机版能放</div>';
+  }
+  return '';
+}
+
+function addPage(id){
+  const l = loadPlans();
+  const p = l.find(x => x.id === id);
+  p.pages = p.pages || [];
+  p.pages.push({ date: '', elements: [{ type:'text', text:'新的一页', size:22 }] });
+  if(savePlans(l)) showPlan(id);
+}
+
+function editPage(id, idx){
+  const l = loadPlans();
+  const p = l.find(x => x.id === id);
+  const pg = p.pages[idx];
+  let html = '<div class="crumb"><a id="back">' + esc(p.title) + '</a><span>›</span><span>第 ' + (idx+1) + ' 页</span></div>';
+  html += '<div class="card plain"><label style="font-size:12px;color:#8B949E">这一页的日期（可空）</label>'
+    + '<input id="pgdate" value="' + esc(pg.date||'') + '" placeholder="2027-01-19" style="margin:6px 0 12px"></div>';
+
+  html += '<div class="card plain"><h3 style="margin:0 0 8px;font-size:13px">内容</h3>';
+  (pg.elements||[]).forEach((el, i) => {
+    html += '<div style="display:flex;gap:8px;align-items:flex-start;padding:8px;background:#1B222B;border-radius:6px;margin-bottom:6px">'
+      + '<div style="flex:1"><div style="font-size:11px;color:#8B949E;margin-bottom:4px">' + (el.type==='text'?'文字':'图片') + '</div>';
+    if(el.type === 'text'){
+      html += '<textarea data-txt="' + i + '" style="width:100%;min-height:60px;background:#0F141A;color:#E6EDF3;border:1px solid #2A323D;border-radius:4px;padding:6px;font-size:13px">' + esc(el.text||'') + '</textarea>';
+    } else {
+      html += '<img src="' + el.src + '" style="max-width:120px;border-radius:4px">';
+    }
+    html += '</div><button class="mini" data-rmel="' + i + '">删</button></div>';
+  });
+  html += '<div style="display:flex;gap:8px;margin-top:10px">'
+    + '<button id="addtext" class="mini">＋ 文字</button>'
+    + '<button id="addimg" class="mini">＋ 图片</button></div></div>';
+  html += '<div class="card plain"><button id="savepage" style="width:100%;padding:12px;background:#4CC2FF;color:#0B1A22;border:0;border-radius:8px;font-weight:700;cursor:pointer">保存</button></div>';
+  main.innerHTML = html;
+
+  const draft = JSON.parse(JSON.stringify(pg));
+  $('#back').onclick = () => showPlan(id);
+  main.querySelectorAll('[data-txt]').forEach(t => {
+    t.oninput = () => { draft.elements[+t.dataset.txt].text = t.value; };
+  });
+  main.querySelectorAll('[data-rmel]').forEach(b => {
+    b.onclick = () => { draft.elements.splice(+b.dataset.rmel, 1); editPageDraft(id, idx, draft); };
+  });
+  $('#addtext').onclick = () => {
+    draft.elements.push({ type:'text', text:'', size:18 });
+    editPageDraft(id, idx, draft);
+  };
+  $('#addimg').onclick = () => {
+    const inp = document.createElement('input');
+    inp.type = 'file'; inp.accept = 'image/*';
+    inp.onchange = () => {
+      const f = inp.files[0];
+      if(!f) return;
+      if(f.size > 1.5*1024*1024){
+        alert('这张图 ' + (f.size/1024/1024).toFixed(1) + ' MB。网页版存在浏览器里，超过 1.5MB 存不下，压缩一下再试。');
+        return;
+      }
+      const r = new FileReader();
+      r.onload = () => { draft.elements.push({ type:'image', src:r.result, name:f.name }); editPageDraft(id, idx, draft); };
+      r.readAsDataURL(f);
+    };
+    inp.click();
+  };
+  $('#savepage').onclick = () => {
+    draft.date = $('#pgdate').value.trim();
+    const l2 = loadPlans();
+    l2.find(x => x.id === id).pages[idx] = draft;
+    if(savePlans(l2)) showPlan(id);
+  };
+}
+
+function editPageDraft(id, idx, draft){
+  const l = loadPlans();
+  l.find(x => x.id === id).pages[idx] = draft;
+  if(savePlans(l)) editPage(id, idx);
+}
+
+function genPages(id){
+  const l = loadPlans();
+  const p = l.find(x => x.id === id);
+  const style = prompt('风格：学习 / 旅行 / 休息 / 混合', '混合');
+  if(style === null) return;
+  const st = new Date(p.start), en = new Date(p.end);
+  if(isNaN(st) || isNaN(en)){ alert('假期区间不对。'); return; }
+  const days = Math.round((en - st)/86400000) + 1;
+  if(days <= 0){ alert('结束比开始还早。'); return; }
+  const n = Math.min(8, Math.max(3, Math.floor(days/4) + 2));
+  const step = Math.max(1, Math.floor(days/n));
+  const study = /学习|混合/.test(style), trip = /旅行|旅游|混合/.test(style);
+  p.pages = [];
+  for(let i=0;i<n;i++){
+    const d = new Date(st.getTime() + Math.min(days-1, i*step)*86400000);
+    const ds = d.toISOString().slice(0,10);
+    let title, note;
+    if(i === 0){ title='假期开始 · 先歇一天'; note='别急着排满。房间收拾一下，睡个够。'; }
+    else if(i === n-1){ title='收心 · 准备开学'; note='作业过一遍有没有漏的，作息往回调两天。'; }
+    else if(trip && i <= 2){ title='出门走走'; note='查路线，路上拍点照片。'; }
+    else if(study){ title='上午学，下午玩'; note='背单词 / 做卷子；下午自由活动。'; }
+    else { title='慢慢过'; note='睡到自然醒，出门散步。'; }
+    p.pages.push({ date: ds, elements: [
+      { type:'text', text:title, size:26 },
+      { type:'text', text:note, size:16 }
+    ]});
+  }
+  if(savePlans(l)) showPlan(id);
+}
+
+function showData(){
+  navLevel = 4; setTab(2);
+  let cities = 0, policies = 0, hols = 0;
+  for(const r of DATA.regions){
+    cities += r.cities.length;
+    for(const c of r.cities){
+      policies += Object.keys(c.policies).length;
+      for(const sk in c.policies) hols += c.policies[sk].holidays.length;
+    }
+  }
+
+  const seen = new Set();
+  let srcHtml = '';
+  for(const r of DATA.regions){
+    for(const c of r.cities){
+      for(const sk in c.policies){
+        const s = c.policies[sk].source;
+        if(!s || !s.url || seen.has(s.url)) continue;
+        seen.add(s.url);
+        srcHtml += `<div style="padding-top:12px">
+          <div class="tiny" style="color:var(--text);font-weight:700">${gradeTag(s.grade)} ${esc(s.publisher || '')}</div>
+          <div class="tiny" style="margin-top:3px">${esc(s.title)}</div>
+          <a class="tiny" style="color:var(--accent);font-weight:700;text-decoration:none;display:inline-block;margin-top:5px" href="${esc(s.url)}" target="_blank" rel="noopener">打开 ↗</a>
+        </div>`;
+      }
+    }
+  }
+
+  main.innerHTML = `
+    <div class="card plain">
+      <h2>数据状态</h2>
+      <div class="kv"><b>学年</b><span>${esc(DATA.academicYear)}</span></div>
+      <div class="kv"><b>更新时间</b><span>${esc((DATA.updatedAt||'').slice(0,10))}</span></div>
+      <div class="kv"><b>覆盖</b><span>${DATA.regions.length} 个省 / ${cities} 个城市 / ${hols} 条假期</span></div>
+      <div class="kv"><b>另收录</b><span>${((DATA.nationalHolidays || {}).items || []).length} 个法定节假日 · ${(DATA.universities || []).length} 所高校校历</span></div>
+      <div class="kv"><b>缺口</b><span>${((DATA.coverage || {}).missing || []).length} / ${(DATA.coverage || {}).total || 31} 个省级地区未收录</span></div>
+    </div>
+
+    <div class="card plain">
+      <h2>更新数据</h2>
+      <p class="tiny" style="margin:6px 0 0">填一个 JSON 地址，能拉到新数据就在本机替换掉。地址为空就不联网。</p>
+      <input id="url" placeholder="https://…/holidays.json" value="${esc(localStorage.getItem('jiaqi.url') || '')}">
+      <div class="btns">
+        <button class="btn" id="check">检查更新</button>
+        <button class="btn ghost" id="reset">恢复内置数据</button>
+      </div>
+    </div>
+
+    <div class="card plain">
+      <h2>数据来源</h2>
+      <p class="tiny" style="margin:6px 0 0">每条假期都标了出处。官方 = 教育厅/政府原文；媒体 = 转载官方校历；汇总 = 第三方整理，可能有误。</p>
+      ${srcHtml}
+    </div>
+
+    <div class="box"><div class="bt">它不保证什么</div>
+      <p>这份数据是从公开的官方校历整理来的，不是实时接口。
+· 学校实际放假可能跟所属地区有几天出入，以学校通知为准。
+· 官方临时调整（极端天气、重大活动）不会自动同步。
+· 没收录的地区显示为空，不代表那里没有假期。</p></div>
+  `;
+
+  $('#check').onclick = async () => {
+    const u = $('#url').value.trim();
+    localStorage.setItem('jiaqi.url', u);
+    if(!u){ alert('先填地址'); return; }
+    try{
+      const res = await fetch(u, {cache:'no-store'});
+      if(!res.ok) throw new Error('HTTP ' + res.status);
+      const j = await res.json();
+      if(!j.regions || !j.schemaVersion) throw new Error('不是假期数据文件');
+      localStorage.setItem('jiaqi.data', JSON.stringify(j));
+      DATA = j;
+      alert('更新好了');
+      showData();
+    }catch(e){
+      alert('更新失败：' + e.message + '\n用的还是本地数据。');
+    }
+  };
+  $('#reset').onclick = () => {
+    localStorage.removeItem('jiaqi.data');
+    location.reload();
+  };
+}
+
+// ------------------------------------------------------------------ 启动
+const UPDATE_URL = 'https://raw.githubusercontent.com/JMX-4869/jiaqi-data/master/holidays.json';
+
+/** 打开就自动查一次远端，比本地新就换上。失败静默。 */
+async function autoUpdate(){
+  try{
+    const res = await fetch(UPDATE_URL + '?t=' + Date.now(), {cache:'no-store'});
+    if(!res.ok) return;
+    const j = await res.json();
+    if(!j.regions || !j.updatedAt) return;
+    if(String(j.updatedAt) <= String(DATA.updatedAt)) return;
+
+    localStorage.setItem('jiaqi.data', JSON.stringify(j));
+    location.reload();   // 重新加载，DATA 从 localStorage 取新版
+  }catch(e){ /* 没网就用本地 */ }
+}
+
+function setTab(i){
+  document.querySelectorAll('nav button').forEach((b, k) => b.classList.toggle('on', k === i));
+}
+document.querySelectorAll('nav button').forEach(b => {
+  b.onclick = () => [showTracks, showAll, showPlans, showData][+b.dataset.tab]();
+});
+
+(async function boot(){
+  try{
+    const cached = localStorage.getItem('jiaqi.data');
+    if(cached){
+      DATA = JSON.parse(cached);
+    } else {
+      const res = await fetch('../data/holidays.json', {cache:'no-store'});
+      DATA = await res.json();
+    }
+    $('#subtitle').textContent = `${DATA.academicYear} 学年 · 数据更新 ${(DATA.updatedAt||'').slice(0,10)}`;
+    showTracks();
+    autoUpdate();
+  }catch(e){
+    main.innerHTML = `<div class="card plain empty"><h3>数据没加载上</h3><p>${esc(e.message)}</p></div>`;
+  }
+})();
+</script>
+</body>
+</html>

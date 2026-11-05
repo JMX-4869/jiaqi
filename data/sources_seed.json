@@ -1,0 +1,157 @@
+[
+ {
+  "name": "北京市教委",
+  "url": "https://jw.beijing.gov.cn",
+  "ok": true
+ },
+ {
+  "name": "天津市教委",
+  "url": "http://jy.tj.gov.cn",
+  "ok": true
+ },
+ {
+  "name": "河北省教育厅",
+  "url": "http://jyt.hebei.gov.cn",
+  "ok": true
+ },
+ {
+  "name": "山西省教育厅",
+  "url": "http://jyt.shanxi.gov.cn",
+  "ok": true
+ },
+ {
+  "name": "内蒙古教育厅",
+  "url": "http://jyt.nmg.gov.cn",
+  "ok": true
+ },
+ {
+  "name": "辽宁省教育厅",
+  "url": "http://jyt.ln.gov.cn",
+  "ok": true
+ },
+ {
+  "name": "吉林省教育厅",
+  "url": "http://jyt.jl.gov.cn",
+  "ok": true
+ },
+ {
+  "name": "黑龙江省教育厅",
+  "url": "http://jyt.hlj.gov.cn",
+  "ok": true
+ },
+ {
+  "name": "上海市教委",
+  "url": "https://edu.sh.gov.cn",
+  "ok": true
+ },
+ {
+  "name": "江苏省教育厅",
+  "url": "https://jyt.jiangsu.gov.cn",
+  "ok": false
+ },
+ {
+  "name": "浙江省教育厅",
+  "url": "http://jyt.zj.gov.cn",
+  "ok": true
+ },
+ {
+  "name": "安徽省教育厅",
+  "url": "http://jyt.ah.gov.cn",
+  "ok": true
+ },
+ {
+  "name": "福建省教育厅",
+  "url": "http://jyt.fujian.gov.cn",
+  "ok": true
+ },
+ {
+  "name": "江西省教育厅",
+  "url": "http://jyt.jiangxi.gov.cn",
+  "ok": true
+ },
+ {
+  "name": "山东省教育厅",
+  "url": "http://edu.shandong.gov.cn",
+  "ok": true
+ },
+ {
+  "name": "河南省教育厅",
+  "url": "http://jyt.henan.gov.cn",
+  "ok": true
+ },
+ {
+  "name": "湖北省教育厅",
+  "url": "http://jyt.hubei.gov.cn",
+  "ok": true
+ },
+ {
+  "name": "湖南省教育厅",
+  "url": "http://jyt.hunan.gov.cn",
+  "ok": true
+ },
+ {
+  "name": "广东省教育厅",
+  "url": "http://edu.gd.gov.cn",
+  "ok": true
+ },
+ {
+  "name": "广西教育厅",
+  "url": "http://jyt.gxzf.gov.cn",
+  "ok": true
+ },
+ {
+  "name": "海南省教育厅",
+  "url": "http://edu.hainan.gov.cn",
+  "ok": true
+ },
+ {
+  "name": "重庆市教委",
+  "url": "http://jw.cq.gov.cn",
+  "ok": true
+ },
+ {
+  "name": "四川省教育厅",
+  "url": "http://edu.sc.gov.cn",
+  "ok": true
+ },
+ {
+  "name": "贵州省教育厅",
+  "url": "http://jyt.guizhou.gov.cn",
+  "ok": true
+ },
+ {
+  "name": "云南省教育厅",
+  "url": "http://jyt.yn.gov.cn",
+  "ok": true
+ },
+ {
+  "name": "西藏教育厅",
+  "url": "https://jyt.xizang.gov.cn",
+  "ok": false
+ },
+ {
+  "name": "陕西省教育厅",
+  "url": "http://jyt.shaanxi.gov.cn",
+  "ok": true
+ },
+ {
+  "name": "甘肃省教育厅",
+  "url": "https://jyt.gansu.gov.cn",
+  "ok": false
+ },
+ {
+  "name": "青海省教育厅",
+  "url": "http://jyt.qinghai.gov.cn",
+  "ok": true
+ },
+ {
+  "name": "宁夏教育厅",
+  "url": "http://jyt.nx.gov.cn",
+  "ok": true
+ },
+ {
+  "name": "新疆教育厅",
+  "url": "http://jyt.xinjiang.gov.cn",
+  "ok": true
+ }
+]

@@ -473,3 +473,50 @@ jiaqi/
 字号层级没大动，还是三级：卡片标题 12–13 / 正文 10.5 / 说明 8.5。三级之间的比值 1.24 和 1.24，都在 1.2–1.35 这个能读出层级的区间里。
 
 **没改的**：`Label` 的右键文案（比如「每天 09:00 提醒」）在窄卡片上还是会被截掉，没做换行或省略号。
+
+---
+
+## 下载 / 仓库
+
+- 仓库：https://github.com/JMX-4869/jiaqi（私有）
+- 下载：https://github.com/JMX-4869/jiaqi/releases/tag/v1.0.0
+
+| 文件 | 大小 | 说明 |
+|---|---|---|
+| `JiaQi.exe` | 961 KB | Windows 桌面版，双击就能跑，不用装 .NET（系统自带） |
+| `jiaqi.apk` | 103 KB | Android 安装包，最低 Android 5.0 |
+
+## 怎么从源码构建
+
+**exe**（需要 Windows 自带的 .NET Framework 4）：
+
+```
+cd desktop
+build.bat
+```
+
+用的是 `C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe`，只支持 C# 5 语法（没有字符串插值、没有 `?.`）。
+
+**apk**（不用 Gradle，直接调 SDK 工具链）：
+
+```
+cd app
+bash build.sh
+```
+
+流程：`aapt2 compile/link` → `javac` → `d8` → 塞 dex 进 apk → `zipalign` → `apksigner`。
+需要 Android SDK（build-tools 34 / platform android-34）和 JDK 17。
+
+**网页版**：直接开 `web/index.html`，或者双击 `启动网页版.bat`。
+
+## 数据更新
+
+数据在另一个仓库：`JMX-4869/jiaqi-data`。
+
+```
+tools\更新数据.bat
+```
+
+跑完会：重新生成 `data/holidays.json` → 推到数据仓库 → 重编 exe 和 apk。
+
+三端启动时都会去 GitHub 拉最新的 `holidays.json`，拉不到就用内置那份。
